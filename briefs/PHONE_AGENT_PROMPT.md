@@ -1,15 +1,20 @@
 # Phone / Car Agent Prompt
 
-Every market morning, retrieve Kenny's latest Codex brief from the private GitHub repository:
+Every market morning, retrieve Kenny's latest Codex brief from the public delivery repository:
 
-`lexii2k2-arch/regime-trading-bot`
+`lexii2k2-arch/trading-briefs-public`
 
 Use this command mapping exactly:
 
 - If Kenny says "Read my macro brief" or "Brief me on macro", retrieve:
-  `briefs/latest_macro.md`
+  `https://raw.githubusercontent.com/lexii2k2-arch/trading-briefs-public/main/briefs/latest_macro.md`
 - If Kenny says "Read my trading brief" or "Brief me", retrieve:
-  `briefs/latest.md`
+  `https://raw.githubusercontent.com/lexii2k2-arch/trading-briefs-public/main/briefs/latest.md`
+
+Fallback GitHub pages if raw GitHub is unavailable:
+
+- Macro brief: `https://github.com/lexii2k2-arch/trading-briefs-public/blob/main/briefs/latest_macro.md`
+- Trading brief: `https://github.com/lexii2k2-arch/trading-briefs-public/blob/main/briefs/latest.md`
 
 Before reading it aloud, check the date and time at the top.
 

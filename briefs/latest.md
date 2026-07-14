@@ -1,37 +1,25 @@
-# Daily Trading Brief - Dry Run
+# Trading Brief Routing Test - July 14, 2026
 
 Agent: Codex
 
-Generated: 2026-07-13 07:16 PM CDT
+Generated: 2026-07-14 06:41 PM CDT
 
-Status: dry-run retrieval test, not an actionable trading brief.
+Status: routing/access verification only. This is not an actionable trading brief.
 
-## Purpose
+If you are reading this from ChatGPT on phone or car voice mode, the public delivery repo route is working.
 
-This file exists to verify that Kenny's phone ChatGPT agent can retrieve and read the latest Codex trading brief from GitHub.
+Correct public delivery repo:
 
-## Data Status
+`lexii2k2-arch/trading-briefs-public`
 
-- Live S&P 500 +3% gapper scan: not run.
-- TradingView Hotlist scan: not run.
-- Price chart analysis: not run.
-- Screener confirmation: not run.
+Trading brief URL:
 
-Reason: this dry run was created after regular market hours, so morning gapper data would be stale.
+`https://raw.githubusercontent.com/lexii2k2-arch/trading-briefs-public/main/briefs/latest.md`
 
-## Phone Agent Test
+Macro brief URL:
 
-If you are reading this from the phone agent, say:
+`https://raw.githubusercontent.com/lexii2k2-arch/trading-briefs-public/main/briefs/latest_macro.md`
 
-"I found the Codex dry-run trading brief in GitHub. It is not actionable. The next step is to run a real market-morning brief."
+Note: the July 14 morning trading brief was not generated into this file because the previous delivery route pointed at a private repo. The next scheduled run should replace this file with the real 8:15 AM Central gapper/watchlist trading brief.
 
-## Next Real Run
-
-For the first actionable run, Codex should:
-
-1. Pull S&P 500 stocks gapping up 3% or more.
-2. Read Kenny's active TradingView Hotlist.
-3. Use price charts as the primary analysis source.
-4. Use screeners only as secondary confirmation.
-5. Write the finished brief to this same file.
-6. Archive a dated copy under `briefs/`.
+Do not place trades from this routing test. Treat it as informational only.

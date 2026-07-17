@@ -7,13 +7,13 @@ Every market morning, retrieve Kenny's latest Codex brief from the public delive
 Use this command mapping exactly:
 
 - If Kenny says "Read my macro brief" or "Brief me on macro", retrieve:
-  `https://raw.githubusercontent.com/lexii2k2-arch/trading-briefs-public/main/briefs/macro-latest.md`
+  `https://raw.githubusercontent.com/lexii2k2-arch/trading-briefs-public/main/briefs/macro-current.md`
 - If Kenny says "Read my trading brief" or "Brief me", retrieve:
   `https://raw.githubusercontent.com/lexii2k2-arch/trading-briefs-public/main/briefs/latest.md`
 
 Fallback GitHub pages if raw GitHub is unavailable:
 
-- Macro brief: `https://github.com/lexii2k2-arch/trading-briefs-public/blob/main/briefs/macro-latest.md`
+- Macro brief: `https://github.com/lexii2k2-arch/trading-briefs-public/blob/main/briefs/macro-current.md`
 - Trading brief: `https://github.com/lexii2k2-arch/trading-briefs-public/blob/main/briefs/latest.md`
 
 Before reading it aloud, check the date and time at the top.

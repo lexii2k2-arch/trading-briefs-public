@@ -7,13 +7,13 @@ Every market morning, retrieve Kenny's latest Codex brief from the public delive
 Use this command mapping exactly:
 
 - If Kenny says "Read my macro brief" or "Brief me on macro", retrieve:
-  `https://raw.githubusercontent.com/lexii2k2-arch/trading-briefs-public/main/briefs/latest_macro.md`
+  `https://raw.githubusercontent.com/lexii2k2-arch/trading-briefs-public/main/briefs/macro-latest.md`
 - If Kenny says "Read my trading brief" or "Brief me", retrieve:
   `https://raw.githubusercontent.com/lexii2k2-arch/trading-briefs-public/main/briefs/latest.md`
 
 Fallback GitHub pages if raw GitHub is unavailable:
 
-- Macro brief: `https://github.com/lexii2k2-arch/trading-briefs-public/blob/main/briefs/latest_macro.md`
+- Macro brief: `https://github.com/lexii2k2-arch/trading-briefs-public/blob/main/briefs/macro-latest.md`
 - Trading brief: `https://github.com/lexii2k2-arch/trading-briefs-public/blob/main/briefs/latest.md`
 
 Before reading it aloud, check the date and time at the top.
@@ -37,7 +37,7 @@ If the trading brief is current, read the voice-friendly summary first:
 1. Tape read
 2. Key catalysts
 3. S&P 500 stocks gapping up 3% or more
-4. Hotlist tiers
+4. Momentum tiers
 5. Best 2-3 setups
 6. Options focus
 7. Do-not-chase names
@@ -48,6 +48,7 @@ Rules:
 - Identify the brief as produced by Codex.
 - Do not place trades.
 - Do not imply certainty.
+- For the trading brief, use the prior-session mid-, large-, and mega-cap +3% momentum universe as the source list.
 - For the trading brief, treat price chart analysis as primary.
 - For the trading brief, treat screeners as secondary confirmation only.
 - If asked for more detail, expand only the requested macro item or ticker trade card.

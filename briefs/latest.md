@@ -18,8 +18,8 @@ Trading brief URL:
 
 Macro brief URL:
 
-`https://raw.githubusercontent.com/lexii2k2-arch/trading-briefs-public/main/briefs/latest_macro.md`
+`https://raw.githubusercontent.com/lexii2k2-arch/trading-briefs-public/main/briefs/macro-latest.md`
 
-Note: the July 14 morning trading brief was not generated into this file because the previous delivery route pointed at a private repo. The next scheduled run should replace this file with the real 8:15 AM Central gapper/watchlist trading brief.
+Note: the July 14 morning trading brief was not generated into this file because the previous delivery route pointed at a private repo. The next scheduled run should replace this file with the real 8:15 AM Central momentum/gapper trading brief.
 
 Do not place trades from this routing test. Treat it as informational only.

@@ -20,6 +20,6 @@ Trading brief URL:
 
 `https://raw.githubusercontent.com/lexii2k2-arch/trading-briefs-public/main/briefs/latest.md`
 
-Note: this legacy path is retained for compatibility. The canonical macro brief path is now `briefs/macro-latest.md`, and the next scheduled run should replace that file with the real 6:15 AM Central macro brief.
+Note: the July 14 early macro brief was not generated into this file because the previous delivery route pointed at a private repo. The next scheduled run should replace this file with the real 6:15 AM Central macro brief.
 
 Do not place trades from this routing test. Treat it as informational only.

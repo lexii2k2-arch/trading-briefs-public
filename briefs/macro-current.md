@@ -1,131 +1,141 @@
-# Morning Macro Brief - August 17, 2026, 6:17 AM CDT
+# Morning Macro Brief - August 17, 2026, 11:33 AM CDT
+
+Source date: 2026-08-17 (America/Chicago)
 
 Agent: Codex
 
-Market status: premarket. Informational research only; no trades are placed and nothing is guaranteed.
+Market status: U.S. regular session open. Current-dated partial macro brief. Informational/research support only; no guarantees and no trade placement.
 
 ## Data Status
 
-- Sources used: Barron's premarket futures/market snapshots, MarketWatch live market coverage, Investopedia premarket summary, WSJ global market summary, TradingEconomics economic calendar, Federal Reserve Board August 2026 calendar, and public earnings/news summaries.
-- Live TradingView, Chrome chart layouts, Claude Screeners, Kenny's private scripts/configuration, exact real-time futures tape, exact 2-year Treasury yield, exact DXY level, exact silver spot quote, and Edgebook dashboard state were not available in this heartbeat.
-- Futures and cross-asset figures are timestamp-sensitive. Where exact values were unavailable, this brief uses public premarket reports, ETF/index proxies, and clearly labeled directional language.
-- This is a current-dated macro environment brief, not a gap scanner or trading plan.
+- Sources used: AP's August 14 U.S. index recap; Kiplinger's August 17 economic and earnings calendars; Federal Reserve Board August 2026 calendar; NAHB release schedule; Trading Economics calendar; current public market/news search results; and time-stamped public secondary snapshots for premarket direction, VIX, Treasury yields, and Bitcoin.
+- Verified current: Central timestamp and market status; prior U.S. cash closes; today's scheduled U.S. economic releases and times; the absence of a verified Fed speaker on the Federal Reserve Board calendar; today's noteworthy earnings timing; broad premarket direction; and a low-volatility/mixed-risk regime.
+- Stale or secondary: prior U.S. cash closes are from Friday, August 14; the accessible VIX and Treasury snapshot is secondary and timestamp-sensitive; Bitcoin references ranged from roughly $62,800 to $63,600; current macro headlines came from public summaries rather than a primary real-time wire.
+- Unavailable or not independently verified: exact live ES, NQ, YM, and RTY quotes; exact live SPY, QQQ, DIA, and IWM quotes; official August Empire State and NAHB actuals; exact Asian closes; exact live European index percentages; 2-year Treasury yield; DXY level; live oil, gold, and silver quotes; TradingView charts; relative volume; Kenny's private scanner output; and Edgebook dashboard state.
+- Because the live quote stack is incomplete, all directional observations are context rather than execution signals. No late pre-market scanner work, chart-dependent analysis, entries, sizing, or detailed trade plans are included.
 
-## Market Tone
+## Market Sentiment And Regime
 
-Regime: neutral-to-slightly risk-on, with technology leadership carrying the tape and low volatility creating some complacency risk.
+Regime: neutral to slightly risk-off, with low absolute volatility but elevated headline and rates sensitivity.
 
-U.S. futures were mixed-to-firmer in early public reports:
+The verified premarket read was mixed: ES/S&P futures were slightly positive, NQ/Nasdaq futures were the relative leader, and YM/Dow plus RTY/Russell futures were slightly negative. A secondary snapshot placed VIX near 14.6, still a low-volatility backdrop. The offset is a firmer-yield, firmer-dollar narrative, softer consumer data from Friday, and renewed Strait of Hormuz risk. That combination argues for selective leadership rather than a broad risk-on label.
 
-- ES / S&P 500 futures: up roughly 0.1%, with one Barron's snapshot showing S&P futures +0.11%.
-- NQ / Nasdaq 100 futures: firmer, reported up about 0.3% to 0.5% as AI and memory-chip interest supported tech.
-- YM / Dow futures: slightly lower, reported down about 0.1% to 0.2%.
-- RTY / Russell futures: exact live quote unavailable; small caps should be treated as rate-sensitive and liquidity-sensitive after last week's rotation.
-- VIX: still low. Barron's reported the VIX had closed Friday at its lowest level of 2026, then edged up about 0.7 point to just under 15.
+Friday's verified cash close was modestly softer: S&P 500 -0.2% to 7,785.76, Dow -0.2% to 53,732.41, Nasdaq -0.3% to 26,729.16, while Russell 2000 gained 0.5% to 3,068.42. For the week, S&P 500 was +0.4%, Nasdaq +0.1%, Dow -0.6%, and Russell 2000 +1.1%. The broader uptrend remained intact into Monday, but index-level extension near records leaves the tape vulnerable to rates or geopolitical shocks.
 
-The market is not broadly risk-off. The S&P 500 is near record territory after three straight weekly gains, while Nasdaq leadership is being helped by AI hardware and memory-chip themes. The main caution is that late-August volume is thin, volatility is suppressed, and bond yields remain high enough to pressure high-duration growth if they rise again.
+## U.S. Futures And ETF Proxies
 
-## Rates, Dollar, Commodities, Crypto
+- ES / SPY: ES was reported slightly positive before the open, around +0.1% in an early public snapshot. Exact current ES and SPY quotes are unavailable.
+- NQ / QQQ: NQ was the clear premarket relative leader. Exact current NQ and QQQ quotes are unavailable.
+- YM / DIA: YM was reported slightly negative. Exact current YM and DIA quotes are unavailable.
+- RTY / IWM: RTY was reported slightly negative even though the Russell 2000 outperformed on Friday. Exact current RTY and IWM quotes are unavailable.
+- VIX: the latest accessible secondary snapshot was about 14.6, a low-volatility reading; exact exchange-verified spot and term structure are unavailable.
 
-- 10-year Treasury yield: about 4.68% to 4.69% in early reports, down slightly from prior levels but still elevated.
-- 2-year Treasury yield: exact current quote unavailable in this run. Direction should be checked after the 7:30 AM Central Empire State release because the front end will carry the cleanest Fed-policy signal.
-- Dollar index / DXY: exact level unavailable. Public summaries reported the dollar lower, with Investopedia noting the dollar fell to its lowest level since June as cooler inflation data reduced rate-hike expectations.
-- Oil: mixed but still macro-relevant. Barron's reported WTI down about 0.3% near $82.19, while other summaries showed Brent modestly higher and prior WTI around $83. The Strait of Hormuz / U.S.-Iran risk remains the inflation tail.
-- Gold: firmer, with Barron's reporting gold +0.41% in one premarket snapshot.
-- Silver: exact current spot/futures quote unavailable. Recent public precious-metals coverage showed silver volatile but supported by the same softer-dollar / lower-hike-odds backdrop as gold.
-- Bitcoin: firmer, with Barron's reporting Bitcoin +0.90% near $63,612 and MarketWatch noting Bitcoin just above $63,000 after a weaker prior week.
+Interpretation: tech leadership can support the headline indexes, but weak Dow/small-cap participation would keep breadth narrow. Confirm breadth, yields, and volatility before treating any index move as durable.
 
-## Global Tone
+## Global Performance
 
-Global tone is constructive but not uniformly strong.
+- Asia: exact August 17 closes were not available from a sufficiently reliable current source in this run. Treat regional performance as missing rather than infer a number. China growth concerns and the global semiconductor/AI rotation remain the principal transmitted risks.
+- Europe: current public summaries described broad European equity declines and a cautious tone. Exact STOXX 600, DAX, CAC, and FTSE percentages were unavailable and are not estimated.
+- Global read: U.S. tech resilience is competing with weaker international breadth, higher-rate sensitivity, and energy-route headlines. That is consistent with a mixed, selective regime rather than synchronized global risk-on.
 
-- Asia: positive in the clearest public snapshot. Barron's reported Japan's Nikkei 225 +0.74% and China's Shanghai Composite +1.41%. WSJ also described Japan higher, helped by below-forecast GDP growth increasing the odds of a slower Bank of Japan hiking path.
-- Europe: modestly higher. Barron's reported STOXX Europe 600 +0.12% and FTSE 100 +0.16%; WSJ described European indexes as mostly higher, helped by technology and pharmaceutical strength.
-- Global pressure points: Middle East / Strait of Hormuz risk, oil-driven inflation pressure, high long-end yields, and whether the market is too comfortable with low VIX readings.
+## Rates, Dollar, Commodities, And Crypto
 
-## Economic Calendar
+- Treasury yields: a secondary snapshot placed the U.S. 10-year near 4.68%, roughly 5 basis points higher. The exact current 2-year yield is unavailable. Higher yields remain the cleanest near-term threat to long-duration AI, semiconductor, nuclear-growth, and software names.
+- DXY: directional public commentary described a firmer dollar, but the exact DXY level could not be validated. A stronger dollar would tighten financial conditions and pressure commodities and international risk assets at the margin.
+- Oil: Brent entered the week above $88 in an accessible weekly summary, with Strait of Hormuz and tanker-security headlines still the primary risk premium. Exact live WTI and Brent quotes are unavailable.
+- Gold: public weekly commentary described gold at a roughly 10-week high. Exact live spot/futures price is unavailable.
+- Silver: exact current price and direction are unavailable.
+- Bitcoin: current public snapshots clustered around $62,800-$63,600 after a roughly 3.1% weekly decline. This is a secondary, non-exchange-verified range; the crypto tape remains softer than record-high U.S. equities.
 
-Key U.S. events today, Central time:
+## Overnight Economic And Geopolitical News
 
-- 7:30 AM: NY Empire State Manufacturing Index for August. TradingEconomics listed prior 15.60 and forecast around 12; separate calendar sources listed the event at 8:30 AM Eastern / 7:30 AM Central.
-- 9:00 AM: NAHB Housing Market Index for August. TradingEconomics listed prior 34 and forecast around 34.
-- 12:00 PM: Federal Reserve CP - Commercial Paper statistical release.
-- 3:00 PM: Net Long-term TIC Flows for June.
-- 3:15 PM: Federal Reserve H.10 Foreign Exchange Rates and H.15 Selected Interest Rates.
+- Friday's retail-sales-related weakness reinforced concern that consumer demand is cooling even while inflation and oil risks remain elevated.
+- Strait of Hormuz security remains the dominant geopolitical macro risk. Public summaries referenced tanker disruption/detention concerns and renewed threats around the shipping route. Any confirmed escalation can lift oil, inflation expectations, and yields while pressuring broad equity breadth.
+- China growth concerns remain a drag on the global cyclical read and are relevant to industrials, commodities, luxury/consumer exposure, and China ADRs.
+- AI infrastructure and memory-chip enthusiasm remain the principal positive offset, but the theme is vulnerable to crowded positioning and higher real yields.
+- Wednesday's July FOMC minutes are the major scheduled policy event for the week, although subsequent weak jobs and inflation data may reduce the minutes' freshness.
 
-Federal Reserve:
+## Today's Economic Calendar - Central Time
 
-- No FOMC decision today and no major Fed speaker found on the Federal Reserve Board calendar for August 17.
-- Wednesday, August 19, 1:00 PM Central: FOMC minutes from the July 28-29 meeting.
-- Next FOMC meeting: September 15-16, 2026.
-- Market/Fed read: Goldman Sachs economists argued the Fed is unlikely to hike in September after softer jobs and inflation data, while MarketWatch cited market-implied hike odds around 30%.
-
-## Macro Headlines
-
-- Technology is the leadership engine this morning. MarketWatch and Investopedia both pointed to AI and memory-chip strength as the early support for Nasdaq futures.
-- Anthropic's reported Q2 revenue acceleration is reinforcing the AI infrastructure narrative and keeping investors focused on AI beneficiaries.
-- Retail earnings are the major consumer read this week: Home Depot, Lowe's, Target, TJX, Walmart, and Ross Stores are on deck.
-- The Fed path is less hawkish than it was earlier this summer, but not settled. Softer labor/inflation/retail data reduced hike pressure; Fed minutes on Wednesday are the next major policy read.
-- Oil and geopolitics remain the main macro risk. Even with equities near highs, Strait of Hormuz / U.S.-Iran headlines can quickly reprice inflation expectations and yields.
-- Nvidia earnings on August 26 and Jackson Hole on August 27-29 are the larger late-August catalysts.
+- 7:30 AM CT: New York Fed Empire State Manufacturing Survey for August. Scheduled consensus in current calendars was near 12, versus a previously reported 15.6. An official actual was not independently verified in this run; a public secondary report cited 20.6 and should be treated as provisional until confirmed.
+- 9:00 AM CT: NAHB/Wells Fargo Housing Market Index for August. Consensus was 33-34 versus 34 previously. An official actual was not independently verified; a public secondary report cited 35 and should be treated as provisional until confirmed.
+- 10:30 AM CT: U.S. 3-month and 6-month bill auctions.
+- 3:00 PM CT: June Treasury International Capital flows, including long-term and overall net capital flows.
+- 3:15 PM CT: Federal Reserve H.10 foreign-exchange-rate statistical release.
+- 3:15 PM CT: Federal Reserve H.15 selected-interest-rates statistical release.
+- Fed speakers/events: no August 17 Fed speech was verified on the Federal Reserve Board's monthly calendar. The next major Fed event is the July 28-29 FOMC minutes on Wednesday, August 19, at 1:00 PM CT.
 
 ## Sector Overview
 
-- AI: leadership remains active. Anthropic revenue headlines and the AI infrastructure buildout are supporting risk appetite, but stretched expectations make the group sensitive to yield spikes and Nvidia earnings risk.
-- Semiconductors: constructive early tone. Memory and AI hardware names were highlighted in public premarket summaries, including Sandisk, Seagate, Western Digital, Micron, AMD, and Intel. Watch for whether SMH/QQQ strength broadens or stalls at resistance.
-- Nuclear: no major fresh overnight catalyst confirmed. Keep it as a secondary energy/infrastructure watch theme, especially if power-demand narratives remain tied to AI data-center buildout.
-- Energy: supported by geopolitical risk but not cleanly risk-on. Oil near the low-$80s for WTI remains high enough to matter for inflation expectations.
-- Infrastructure: still tied to AI power demand, grid investment, and industrial capex. Favor relative strength confirmation over broad theme buying.
-- Software: constructive if Nasdaq holds green and yields stay contained. AI-adjacent software benefits from the same infrastructure narrative, but high-multiple names remain rate-sensitive.
-- Small caps: neutral. They benefit from lower hike odds but can lag if long yields stay elevated or risk appetite narrows to mega-cap tech.
+- AI: relative leadership remains possible while NQ outperforms, but higher yields and crowded positioning make confirmation essential. Watch NVDA and the broad AI infrastructure complex as sentiment gauges only.
+- Semiconductors: premarket tech leadership is constructive, but recent memory-chip volatility and valuation sensitivity argue for watching SMH/SOX breadth instead of assuming group-wide strength.
+- Nuclear: the secular power-demand thesis remains intact, but this high-duration group is sensitive to yield spikes. No fresh nuclear-specific overnight catalyst was verified.
+- Energy: the strongest macro tailwind comes from elevated oil and shipping-route risk. The same catalyst is a tax on consumers and a potential equity-market risk if crude accelerates.
+- Infrastructure: still supported by grid, power, and data-center investment themes, but industrial breadth should be cross-checked against yields and the stronger Empire State signal if confirmed.
+- Software: can benefit from NQ leadership and falling volatility, but multiple compression remains a risk if the 10-year yield stays near 4.7%.
+- Small caps: Friday relative strength was encouraging, yet negative RTY premarket direction and higher yields create a mixed signal. IWM needs broader cyclicals and regional banks to confirm.
 
-## Key Themes And Preliminary Watchlist
+## Key Themes
 
-Themes for the morning:
+- Narrow tech leadership versus mixed Dow and small-cap participation.
+- Low VIX versus non-trivial geopolitical and rates risk.
+- A potentially stronger regional manufacturing print versus softer consumer/housing evidence.
+- Oil as both an energy-sector tailwind and an inflation/consumer headwind.
+- Record-adjacent U.S. indexes versus lagging Bitcoin and cautious international breadth.
+- Wednesday FOMC minutes and this week's housing/retail earnings as the next major macro tests.
 
-- Tech leadership is carrying the tape; breadth confirmation matters.
-- Low VIX is supportive in the short term but raises complacency risk.
-- Watch the 10-year yield around the 4.68% to 4.70% area and the unavailable 2-year yield after the 7:30 AM Central data.
-- A cooler manufacturing/housing read with stable yields can keep risk-on alive.
-- A hotter prices-paid or activity read that pushes yields higher can pressure Nasdaq and small caps despite the AI bid.
-- Oil/geopolitics are still the main macro tail risk.
+## Preliminary Watchlist
 
-Stocks and groups worth monitoring before the later trading brief:
+- Index and breadth gauges: SPY, QQQ, DIA, IWM, VIX.
+- AI and semiconductors: NVDA, AMD, SMH, SOXX.
+- Energy and oil sensitivity: XLE, XOP, OIH; confirm against live crude before drawing conclusions.
+- Nuclear and power: URA, URNM, CEG, VST; watch yields and energy headlines.
+- Infrastructure and industrials: PAVE, XLI, CAT.
+- Software: IGV, CRM, NOW; watch duration sensitivity.
+- Macro hedges/barometers: TLT, UUP, GLD, SLV, BTC.
 
-- AI / mega-cap barometers: NVDA, QQQ, SMH, AMD, MSFT, GOOGL.
-- Memory and AI hardware strength: SNDK, STX, WDC, MU, AMD, INTC.
-- Data-center power / infrastructure: BE, VRT, ETN, PWR, CEG.
-- Retail earnings week: HD, LOW, TGT, TJX, WMT, ROST.
-- Energy / oil sensitivity: XLE, XOM, CVX, SLB.
-- Small caps / breadth check: IWM and equal-weight S&P proxies.
+This is a monitoring list only. It contains no scanner ranking, entry, stop, target, position size, or trade recommendation.
+
+## Catalysts
+
+- Confirmation of the Empire State and NAHB actuals and the market's rates response.
+- Treasury bill auctions and any late-day move in the curve or dollar.
+- Strait of Hormuz, Iran, and tanker-shipping headlines.
+- Wednesday's FOMC minutes.
+- Tuesday's housing, industrial production, and import/export-price data.
+- Retail and China-linked earnings later in the week.
 
 ## Risks
 
-- VIX under 15 can make the tape vulnerable to a fast risk-off repricing if a macro or geopolitical shock hits.
-- High long-end yields remain a headwind for speculative growth even if the Fed is less likely to hike in September.
-- Oil headlines can undo the softer-inflation narrative.
-- Retail earnings can challenge the consumer-resilience story.
-- AI leadership is strong but concentrated; a failed semi/AI breakout would weaken the risk-on read quickly.
+- A sudden oil spike that lifts inflation expectations and compresses equity multiples.
+- A renewed rise in the 2-year and 10-year yields, especially with narrow tech leadership.
+- False comfort from a low VIX when geopolitical headlines can gap markets.
+- Weak breadth beneath record-adjacent large-cap indexes.
+- Consumer slowdown signals broadening from retail sales into housing and discretionary earnings.
+- Incomplete live data in this brief; all execution decisions require a current quote and chart check elsewhere.
 
-## Kenny Readout
+## Important Earnings
 
-Risk read: neutral-to-slightly risk-on.
+- Monday after the close: Fabrinet (FN) is the only noteworthy report highlighted on the verified calendar.
+- Tuesday before the open: Home Depot (HD), Amer Sports (AS), Baidu (BIDU), and Klarna (KLAR).
+- Tuesday after the close: Keysight (KEYS), Jack Henry (JKHY), Toll Brothers (TOL), La-Z-Boy (LZB), Mercury Systems (MRCY), and ZTO Express (ZTO).
+- Wednesday: Analog Devices (ADI), Lowe's (LOW), Target (TGT), TJX (TJX), and BILL are among the notable reports.
+- Thursday: Walmart (WMT), Alibaba (BABA), Deere (DE), NetEase (NTES), and Ross Stores (ROST) are key macro read-throughs.
 
-Bullish/bearish bias: 6 out of 10 bullish.
-
-The setup is constructive because Nasdaq futures are green, AI hardware is leading, Europe and Asia are mostly firmer, and VIX is low. It is not an all-clear because Dow futures are soft, long yields are still elevated, oil/geopolitics remain active, and the market is leaning heavily on a narrow AI/tech leadership story. The clean bullish path is Nasdaq holding green while yields stay contained after 7:30 AM Central. The bearish path is a yield pop, oil headline, or failed AI/semi strength.
+Retail guidance will be especially useful for testing whether Friday's softer consumer signal is isolated or broadening. FN and KEYS matter to the electronics/AI infrastructure read-through, while ADI matters to semiconductor breadth.
 
 ## Concise Spoken Summary
 
-Kenny, this is a neutral-to-slightly risk-on morning. S&P futures are up a touch, Nasdaq futures are stronger, and Dow futures are slightly red. Tech is leading again, helped by AI infrastructure headlines and memory-chip strength. VIX is still very low, just under 15 in early reports, so the tape is calm but maybe a little complacent. The 10-year yield is around 4.68% to 4.69%, oil is still a macro risk near the low-$80s WTI area, gold is firmer, and Bitcoin is near $63,600. The key data today is Empire State Manufacturing at 7:30 Central and NAHB housing at 9:00. Bias is 6 out of 10 bullish, but I would watch yields and whether semis actually hold the early bid.
+Kenny, today's macro regime is mixed and slightly defensive, not outright risk-off. Nasdaq futures led before the open, but Dow and Russell futures lagged, Europe was described as softer, the 10-year yield was near 4.68% in a secondary snapshot, and oil still carries a Strait of Hormuz risk premium. VIX near the mid-14s keeps absolute volatility low, but that can understate headline risk. The two scheduled morning reports were Empire State at 7:30 Central and NAHB at 9:00; secondary reports showed stronger readings, but official actuals were not independently verified. Watch breadth, yields, oil, and whether small caps confirm tech strength. This is macro context only, with no trade plan or placement.
 
 ## Source Notes
 
-- Barron's premarket futures / volatility: https://www.barrons.com/livecoverage/stock-market-news-today-081726/card/stock-futures-rise-in-thin-trading-80rYoIxF5B7ADd77vifm
-- Barron's premarket snapshot: https://www.barrons.com/articles/s-p-500-futures-climb-in-premarket-trading-transunion-oceanagold-lead-6ab51e93
-- MarketWatch live market coverage: https://www.marketwatch.com/livecoverage/stock-market-today-s-p-500-nasdaq-dow-strong-q2-earnings-season-us-iran-ceasefire-ends
-- MarketWatch Fed/September rate context: https://www.marketwatch.com/story/why-goldman-sachs-thinks-the-fed-wont-be-hiking-interest-rates-in-september-718275e7
-- Investopedia premarket summary: https://www.investopedia.com/5-things-to-know-before-the-stock-market-opens-on-monday-august-17-2026-12061089
-- WSJ global market summary: https://www.wsj.com/finance/stocks/nikkei-rises-0-5-weaker-2q-gdp-growth-could-prompt-a-boj-hold-0871a0ea
-- TradingEconomics U.S. economic calendar: https://tradingeconomics.com/united-states/calendar%26importance%3D2
-- Federal Reserve August 2026 calendar: https://www.federalreserve.gov/newsevents/2026-august.htm
+- AP, August 14 U.S. index recap: https://apnews.com/article/41b7cf2acc6562758183b1c5eae73635
+- Kiplinger economic calendar, week of August 17: https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar
+- Kiplinger earnings calendar, week of August 17: https://www.kiplinger.com/investing/stocks/17494/next-week-earnings-calendar-stocks
+- Federal Reserve Board August 2026 calendar: https://www.federalreserve.gov/newsevents/2026-august.htm
+- NAHB HMI release schedule: https://www.nahb.org/news-and-economics/housing-economics/indices/nahb-wells-fargo-housing-market-index-release-dates
+- Trading Economics U.S. calendar: https://tradingeconomics.com/united-states/calendar
+- Public premarket-direction snapshot: https://www.reddit.com/r/MVIS/comments/1vqqbpg/trading_action_monday_august_17_2026/
+- Public current-market summary used only as secondary context: https://www.reddit.com/r/EverHint/comments/1vqwlrw/stock_market_news_august_17_2026_morning_update/
+- BTC Markets weekly close summary: https://www.reddit.com/r/u_BTCMarkets/comments/1vqhv7c/btc_markets_weekly_crypto_close_as_of_17th_august/

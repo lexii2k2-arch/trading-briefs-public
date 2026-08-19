@@ -1,154 +1,141 @@
-# Pre-Market Trading Brief — Monday, August 17, 2026, 11:42 AM CDT
+# Market-Open Trading Brief — Wednesday, August 19, 2026, 11:42 AM CDT
 
-**Market status:** U.S. regular session open. This is a late repair of the pre-market delivery workflow; pre-open fields are preserved as historical context and are not live quotes.
+- **Market status:** U.S. regular session open; approximately 2 hours 12 minutes after the opening bell.
+- **Agent:** Codex
+- **Bias:** Cautiously bullish while SPY holds its opening range, but selective rather than broad risk-on. Health care, consumer discretionary, and materials lead; semiconductors remain the weak link.
+- **Highlight:** The cleanest conditional continuation is MRK above VWAP/151.82. AMLX has the strongest two-day momentum but carries binary biotech and extension risk. Do not chase MRNA's triple-digit gap.
 
-**Agent: Codex**
-
-**Source date:** 2026-08-17 (America/Chicago)
+> Informational and research support only. No guarantee, investment advice, or trade placement.
 
 ## Data Status
 
-- **Snapshot window:** 11:31–11:38 AM CDT. TradingView public scanner data was retrieved during the open for 2,215 NYSE/Nasdaq/NYSE American stocks with market capitalization of at least $2B. Friday, August 14 is the latest completed regular session.
-- **Primary chart data:** completed Friday OHLC/change/volume plus Monday OHLC, VWAP, EMA20/50/200, RSI, futures/index/sector prices, and displayed pre-open prices/volumes from TradingView. News and screeners are context only.
-- **Primary universe gate:** prior-session gain at least 3%; exact close location `(close - low) / (high - low) >= 0.80`; at least $20M Friday dollar volume; market cap at least $2B; common-stock/liquidity screen to exclude low-float microcaps, preferreds, warrants, acquisition vehicles, and thin names. The focused table additionally emphasizes at least $5B market cap and $100M Friday dollar volume.
-- **Unavailable:** premarket relative volume, reliable float, Claude Screener output, authenticated TradingView drawings, live option chains/Greeks/open interest/spreads, and reproducible order-block boundaries. These fields are marked unavailable and are not inferred.
-- **Relative volume:** displayed `rVol` is TradingView's live 10-day regular-session comparison, not premarket relative volume. Monday volume and price continue to change.
-- Informational/research support only; no guarantees and no trade placement.
+- **Live market data used:** TradingView public U.S. stock/fund/futures scanner snapshots captured around 11:35–11:42 AM CDT: price, session open/high/low, daily change, gap, volume, 10-day relative-volume estimate, float where available, VWAP, RSI, and moving averages.
+- **Prior-session universe:** StatMuse return rankings for August 18, plus hourly OHLC/volume aggregated into regular-session open/high/low/close and close-location. Candidates below meet +3% and an exact calculated close-location of at least 80%. The hourly aggregation is a best-available public reconstruction, not an exchange-certified daily feed.
+- **Independent validation:** [Associated Press market coverage](https://apnews.com/article/stocks-futures-bonds-oil-inflation-trump-ai-9e355be634e4a21059fc1d1f20a1239e), [AP August 18 close recap](https://apnews.com/article/wall-street-stocks-dow-nasdaq-63300d6f51d4d27ce881cc6c11719171), and [Kiplinger economic calendar](https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar).
+- **Unavailable:** Interactive TradingView chart render, Claude Screeners, Level II/order flow, full higher-timeframe candle history, exact options chains, spreads, Greeks, open interest, and institutional dark-pool data. Order-block labels below are opening-range proxies, not validated higher-timeframe blocks. No contract premium or Greek is inferred.
 
-## Market Regime
+## Market Regime, Futures, Overnight News, Calendar, and Internals
 
-**Long-term constructive, intraday selective/mixed.** SPY was $775.54 (-0.10%), QQQ $732.83 (+0.24%), and IWM $304.15 (-0.31%). All three remained above their daily EMA20/50/200, but SPY and QQQ were just below VWAP while IWM was slightly above it. VIX was 15.02 (+5.40%) from a low base. The regime supports selective momentum, not broad chasing.
+The tape is attempting a rebound after three declining S&P 500 sessions. The prior session closed with the S&P 500 down 0.7%, Nasdaq Composite down 1.3%, Dow down 0.2%, and Russell 2000 down 1.3%; semiconductors and AI leaders supplied most of the pressure. Today, falling long-duration Treasury yields are relieving some valuation pressure, but the NDX/SOXX complex is lagging badly enough to keep the regime **selective and headline-sensitive**.
 
-## Futures and Overnight News
+| Instrument | Snapshot | Opening range / context |
+|---|---:|---|
+| ES futures | 7,748.50, +0.45% | 7,698.25–7,764.75 |
+| NQ futures | 29,608.25, +0.08% | 29,375.75–29,757.25; clear laggard |
+| YM futures | 53,581, +0.33% | 53,337–53,780 |
+| RTY futures | 3,048.30, +0.72% | 3,019.80–3,059.10; breadth confirmation |
+| SPY | 771.50, +0.53% | 768.10–772.47; constructive above 770.36 open |
+| QQQ | 719.13, +0.23% | 712.61–721.50; recovered from opening weakness |
+| SMH / SOXX proxy | 564.55, -0.92% | 556.32–576.84; still below the open and restraining NDX |
+| IWM | 302.44, +0.74% | 301.44–303.41; participation better than mega-cap tech |
 
-| Contract | Level | Change | Session range | Read |
-|---|---:|---:|---:|---|
-| E-mini S&P (ES) | 7,796.75 | -0.11% | 7,788.25–7,824.50 | Flat-to-soft; below VWAP 7,803.17 |
-| E-mini Nasdaq (NQ) | 30,207.75 | +0.22% | 30,155.25–30,343.00 | Relative leader; below VWAP 30,235.33 |
-| E-mini Dow (YM) | 53,679 | -0.24% | 53,551–53,840 | Lagging |
-| E-mini Russell (RTY) | 3,065.50 | -0.31% | 3,056.30–3,079.90 | Small caps lagging |
-| Crude oil | $82.41 | +0.01% | $81.50–$83.23 | Firm but not accelerating |
-| Gold | $4,484.00 | +1.05% | $4,422.30–$4,486.50 | Defensive bid / near session high |
-| U.S. Dollar Index | 99.491 | -0.15% | 99.294–99.668 | Softer dollar |
-
-Independent market coverage described U.S. stocks as hovering near record highs, with retailer earnings the next major fundamental focus. The live tape confirms a split market: Nasdaq strength and electronic-technology leadership coexist with soft breadth, rising VIX, and defensive gold demand.
-
-## Economic Calendar and Earnings
-
-- **Monday:** Empire State Manufacturing at 7:30 AM CT and NAHB Housing Market Index at 9:00 AM CT. Exact released values were not independently confirmed in this run; do not trade an unverified print.
-- **Tuesday:** housing starts/building permits, import prices, capacity utilization, industrial production; Home Depot reports before the open.
-- **Wednesday:** July FOMC minutes; Analog Devices, Lowe's, Target, TJX, and Estee Lauder are scheduled.
-- **Thursday:** jobless claims and Philadelphia Fed; Walmart reports before the open.
-- **Friday:** flash manufacturing/services PMIs.
-- No noteworthy large-cap earnings were scheduled before Monday's open. Fabrinet reports after the close, so late-session optical-networking sympathy can carry event risk.
-
-## Internals Update
-
-Within the $2B+ scanner universe, there were **781 advancers, 1,414 decliners, and 20 unchanged** (A/D ratio 0.55). Up-volume was about 1.10B shares versus 1.37B down-volume (0.80 ratio). There were 129 gainers of at least 3% and 153 losers of at least 3%. This is not official consolidated-exchange breadth, but it is a broad, reproducible large/mid-cap proxy and argues for reduced size and strict confirmation.
-
-Sector proxies agreed: XLE +0.56%, XLI +0.30%, and XLV +0.19% led; XLC -1.56%, XLP -1.36%, XLY -0.92%, XLRE -0.92%, and XLB -0.65% lagged. The scanner's strongest median groups were non-energy minerals, energy minerals, and electronic technology.
+- **Rates/news:** Treasury said it will at least double planned purchases of longer-dated Treasurys from September 9 through November 4. AP reported the 10-year yield near 4.65%, down from 4.71% Tuesday, and the 30-year near 5.20%, down from 5.28%.
+- **Commodities:** WTI futures 85.30, +1.48%; gold futures 4,549.70, +2.92%. High oil still matters for inflation and duration-sensitive growth.
+- **Economic calendar:** July FOMC minutes are due at **1:00 PM CDT / 2:00 PM EDT**. Reduce new risk before the release; stale limit orders are especially dangerous around the headline.
+- **Breadth:** Among TradingView U.S. stocks with market cap at least $2B: **2,032 advancers, 1,237 decliners, 42 unchanged** (about 1.64:1 positive). This supports the rebound, though it does not erase semiconductor weakness.
+- **Sector leadership:** XLV +2.88%, XLB +1.92%, XLY +1.91%, XLP +0.91%; XLE +0.27%. Lagging: XLI -0.59%, XLK -0.39%, XLU -0.33%, SMH -0.92%.
 
 ## Prior-Session +3% Momentum Universe
 
-All names below passed the exact 0.80 close-location rule and liquidity screen. `CLV` is Friday close location; dollar volume is Friday close × Friday volume. Catalyst entries distinguish verified company news from price/sector context.
+Screen: mid/large/mega-cap return of at least 3% on August 18 and reconstructed close-location at or above 80%. Dollar volume is approximate close × reconstructed volume. Names failing the close-location gate were excluded even if their return exceeded 3%.
 
-| Ticker | Company | Fri gain | CLV | Fri volume | Dollar volume | Liquidity | Catalyst / context |
-|---|---|---:|---:|---:|---:|---|---|
-| AAOI | Applied Optoelectronics | +15.53% | 0.865 | 18.77M | $2.82B | High / options listed | AI-optics momentum; no same-day company release independently confirmed |
-| MXL | MaxLinear | +10.68% | 0.981 | 3.23M | $273.7M | Good / options listed | Semiconductor/communications momentum; narrative unverified |
-| NBIS | Nebius Group | +8.88% | 0.955 | 29.02M | $8.06B | Very high / options listed | AI-infrastructure beta; no fresh catalyst independently confirmed |
-| CPRT | Copart | +7.55% | 0.941 | 17.36M | $548.7M | High / options listed | Price-driven continuation; fresh catalyst unavailable |
-| CIFR | Cipher Digital | +7.43% | 0.851 | 38.13M | $680.7M | High, high beta / options listed | Crypto/AI-power beta; catalyst unverified |
-| WULF | TeraWulf | +6.56% | 0.902 | 31.09M | $540.3M | High, high beta / options listed | Crypto/AI-power sympathy; catalyst unverified |
-| CGNX | Cognex | +6.56% | 0.993 | 2.39M | $157.2M | Good / options listed | Electronic-technology strength; fresh catalyst unavailable |
-| AMD | Advanced Micro Devices | +6.50% | 0.991 | 25.57M | $13.15B | Institutional / liquid options | AI-semiconductor leadership; independent same-day catalyst unavailable |
-| DIOD | Diodes | +6.47% | 0.961 | 2.22M | $229.6M | Good / options listed | Post-Q2/acquisition context; August 5 results and ElevATE deal are company-confirmed |
-| FOXA | Fox | +5.49% | 0.900 | 7.50M | $517.9M | High / options listed | Price-driven; no fresh catalyst confirmed |
-| NRG | NRG Energy | +5.42% | 0.995 | 1.45M | $182.8M | Good / options listed | Power/utility momentum; fresh catalyst unavailable |
-| VSH | Vishay Intertechnology | +5.28% | 0.863 | 2.93M | $102.9M | Good / options listed | Semiconductor sympathy; catalyst unverified |
-| SMTC | Semtech | +5.07% | 0.967 | 1.92M | $269.2M | Good / options listed | Connectivity/semiconductor momentum; fresh catalyst unavailable |
-| TSEM | Tower Semiconductor | +4.95% | 0.840 | 1.15M | $304.9M | Good / options listed | Foundry/semiconductor strength; catalyst unverified |
-| GLW | Corning | +4.70% | 0.820 | 8.32M | $1.38B | Institutional / liquid options | Q2 core sales +17% and Optical Communications +32% are company-confirmed; Monday move appears sector continuation |
+| Ticker | Company | Aug. 18 gain | Close-location | Reconstructed volume / dollar volume | Catalyst / context |
+|---|---|---:|---:|---:|---|
+| AMLX | Amylyx Pharmaceuticals | +17.39% | 96.2% | 601K / ~$21.1M | Positive Phase 3 LUCIDITY avexitide result; binary biotech risk remains |
+| HTFL | Heartflow | +8.99% | 98.4% | 161K / ~$7.3M | Follow-through after Q2 loss beat, raised revenue guidance, and analyst-target activity; thinner liquidity |
+| LEGN | Legend Biotech | +6.30% | 98.7% | 150K / ~$3.3M | No same-day catalyst independently confirmed |
+| NUVB | Nuvation Bio | +5.94% | 98.0% | 545K / ~$3.8M | No same-day catalyst independently confirmed |
+| PODD | Insulet | +5.80% | 86.5% | 79K / ~$11.7M | Rebound after an earlier post-earnings selloff; recent Omnipod growth strong but FY26 sales outlook was reduced |
+| ACMR | ACM Research | +5.61% | 90.9% | 90K / ~$7.6M | Semiconductor rebound attempt; no same-day catalyst independently confirmed |
+| ROIV | Roivant Sciences | +4.07% | 96.2% | 341K / ~$12.8M | No same-day catalyst independently confirmed |
+| AXON | Axon Enterprise | +4.03% | 82.2% | 20K / ~$12.3M | Institutional-quality name, but reconstructed share volume is low and should be treated cautiously |
+| RVMD | Revolution Medicines | +3.28% | 93.5% | 83K / ~$17.9M | Biotechnology momentum; no same-day catalyst independently confirmed |
+| MNST | Monster Beverage | +3.16% | 92.0% | 812K / ~$38.5M | Defensive-growth rotation; no same-day catalyst independently confirmed |
 
-## Premarket Continuation / Gap Update
+**Gate exclusions:** HSAI +8.53% closed at 75.0% of its range; ULTA +4.02% at 72.9%; RBA +3.98% at 79.3%; DT +3.47% at 78.9%; SPOT +3.40% at 62.3%; BBIO +3.38% at 73.3%; UI +3.32% at 56.2%; HUBS/FIG/SAIL did not have reliable qualifying daily reconstructions. They are not promoted into the primary universe.
 
-These are captured pre-open fields, followed by the later live print. Premarket relative volume and float were unavailable for every row.
+## Opening-Session Continuation and Gap Update
 
-| Ticker | Pre price | Pre gap | Pre volume | Pre rVol | Float | Captured live price / change | Live volume / rVol |
-|---|---:|---:|---:|---|---|---:|---:|
-| SMTC | $142.31 | +1.40% | 10.7K | Unavailable | Unavailable | $154.68 / +10.21% | 1.67M / 0.84x |
-| VICR | $243.01 | +3.52% | 8.4K | Unavailable | Unavailable | $254.28 / +8.32% | 290K / 0.42x |
-| GLW | $169.54 | +2.14% | 104.2K | Unavailable | Unavailable | $176.51 / +6.34% | 5.23M / 0.50x |
-| DIOD | $104.00 | +0.50% | 6.8K | Unavailable | Unavailable | $109.51 / +5.83% | 378K / 0.48x |
-| AAOI | $152.65 | +1.58% | 330.7K | Unavailable | Unavailable | $157.79 / +5.00% | 7.36M / 0.47x |
-| TSEM | $270.16 | +1.76% | 11.0K | Unavailable | Unavailable | $275.37 / +3.73% | 584K / 0.23x |
-| CIFR | $17.77 | -0.48% | 670.2K | Unavailable | Unavailable | $18.29 / +2.41% | 14.40M / 0.38x |
-| MXL | $87.39 | +3.01% | 100.9K | Unavailable | Unavailable | $86.47 / +1.92% | 1.58M / 0.68x |
-| NBIS | $276.90 | -0.28% | 550.3K | Unavailable | Unavailable | $277.43 / -0.09% | 10.52M / 0.37x |
-| AMD | $514.07 | -0.06% | 433.4K | Unavailable | Unavailable | $511.50 / -0.56% | 10.74M / 0.39x |
+| Ticker | Current | Day change | Gap | Volume | RVOL | Float | Read |
+|---|---:|---:|---:|---:|---:|---:|---|
+| AMLX | 38.24 | +8.91% | +2.91% | 4.72M | 1.20x | 94.6M | Best two-day continuation; above 37.46 VWAP, testing 38.83 high |
+| AXON | 639.10 | +3.10% | +0.14% | 275K | 0.24x | unavailable | Constructive but low participation; 643.15 is confirmation |
+| PODD | 151.94 | +2.64% | -0.02% | 498K | 0.23x | 69.1M | Above VWAP, but volume does not validate an aggressive chase |
+| HTFL | 45.62 | +0.86% | +1.75% | 1.52M | 0.62x | 64.4M | Holding above prior close; 47.23 remains supply |
+| NUVB | 7.21 | +3.58% | +2.87% | 6.63M | 1.07x | 251.1M | Positive continuation, but small-dollar biotech volatility |
+| MNST | 47.27 | -0.23% | -0.22% | 3.07M | 0.27x | 1.39B | Flat digestion rather than continuation |
+| ROIV | 36.84 | -1.43% | +1.23% | 1.69M | 0.26x | 524.1M | Gap faded; below open, no long trigger |
+| RVMD | 213.88 | -0.98% | +1.31% | 456K | 0.28x | 192.8M | Gap faded below VWAP; wait |
+| ACMR | 79.35 | -5.95% | +0.75% | 454K | 0.45x | 58.1M | Failed continuation; avoid until it reclaims 80.73 VWAP/85 open |
 
-## Catalysts and Independent News Validation
+## Catalysts, Earnings Reactions, and Current Momentum
 
-- **Confirmed:** Corning reported Q2 core sales growth of 17%, core EPS growth of 30%, and Optical Communications growth of 32% on July 28. This validates the AI-optics backdrop, not Monday's precise move.
-- **Confirmed:** Diodes announced the $250M ElevATE Semiconductor acquisition in July and reported Q2 on August 5. The present breakout is technically valid, but no August 17 corporate release was found.
-- **Confirmed backdrop:** Applied Optoelectronics has publicly described capacity expansion for 800G/1.6T optical transceivers and a $71M hyperscaler order. No same-day corporate release was independently found, so Friday/Monday strength remains price-led.
-- **Market confirmation:** independent market reporting showed the S&P near flat, Dow lower, and Nasdaq modestly higher around midday—consistent with TradingView's split tape.
-- **Not confirmed:** no same-day company catalyst was independently validated for SMTC, VICR, MXL, TSEM, NBIS, CIFR, or AMD. Treat those as technical/sector moves, not news-certified breakouts.
+- **MRNA 144.29, +129.17%, 119.3M shares, 20.52x RVOL:** Moderna and Merck announced encouraging initial melanoma-vaccine study results. AP independently reported better recurrence-free survival for the combination with Keytruda than Keytruda alone. The move is real, but the stock is far too extended for an opening chase.
+- **MRK 150.11, +11.05%, 19.8M, 2.41x RVOL:** Same validated melanoma-vaccine catalyst; much cleaner institutional liquidity and less extreme extension than MRNA.
+- **EL 98.15, +16.47%, 7.93M, 3.14x RVOL:** Earnings beat and accelerating revenue growth, with AP citing strength in mainland China. High-quality momentum but already extended above the 93.74 open.
+- **TGT 160.27, +5.11%, 5.39M, 1.26x RVOL:** Better-than-expected profit reaction, though the stock initially gapped down 3.07% before reversing sharply.
+- **LOW 221.01, +2.49%, 2.36M, 0.99x RVOL; TOL 152.80, +6.96%, 605K, 0.70x RVOL:** Positive earnings reactions support housing/consumer cyclicals despite still-high mortgage rates.
+- **Other live momentum:** TEM +23.76% (3.10x RVOL), CDE +14.40%, MSTR +14.63%, MRVL +9.64% (1.45x RVOL), COIN +12.71%, HOOD +7.84%, CRM +5.60%, UBER +5.40%. Crypto and metals participation is broad, but avoid confusing it with semiconductor recovery: AVGO remains about -4.1% and SMH is negative.
 
-## Current Momentum and Tiered Opportunities
+## Technical Map and Chase Risk
 
-**No fully confirmed A+ trade is active at this late snapshot.** The best **A+ candidates, conditional on a non-chasing entry**, are GLW, SMTC, and AAOI. DIOD and VICR are A-/B+ because current volume is lighter and price is already extended. AMD/NBIS are liquid decision bars but not continuation leaders today.
+Because full chart candles are unavailable, the zones below use the current opening range, VWAP, and the 0.500–0.618 retracement of today's low-to-high impulse. Treat the low/open/VWAP clusters as **demand proxies**, not formally validated higher-timeframe bullish order blocks. The session high is the nearest supply/liquidity obstacle.
 
-1. **GLW — conditional A+:** institutional dollar volume, live price above VWAP, and a successful test of the preferred retracement pocket.
-2. **SMTC — conditional A+:** strongest live continuation and near-1x rVol, but far too extended for a market-order chase.
-3. **AAOI — conditional A+:** strongest two-session momentum and liquid tape; extension/ATR risk is extreme.
-4. **DIOD — A-/B+:** clean two-day structure and pocket confluence, but current live volume is modest.
-5. **VICR — A-/B+:** strong continuation after a pocket test, but thin intraday share volume and wide ATR.
-6. **TSEM / MXL — B:** constructive, but less live confirmation than leaders.
-7. **AMD / NBIS — neutral decision bars:** Friday leaders that are flat/down today; useful sector confirmation, not current chase candidates.
+| Ticker | Bias/status | Demand proxy / 0.500–0.618 pocket | Supply / trigger | Structural invalidation | Chase risk |
+|---|---|---|---|---|---|
+| MRK | Bullish setup | VWAP 148.94; Fib 147.54–148.36 | 151.82 high | Below 144.90 session low | Moderate; avoid >152 without hold/retest |
+| AMLX | Bullish, triggered | VWAP 37.46; Fib 36.66–37.08 | 38.83 high | Below 35.32 | High due two-day biotech extension |
+| EL | Bullish setup | VWAP 97.15; Fib 95.91–96.66 | 99.82 high | Below 93.50 | High; RSI about 73 |
+| PODD | Bullish setup | VWAP 151.69; Fib 150.71–151.56 | 155.17 high | Below 147.96 | Moderate; RVOL too weak for chase |
+| AXON | Bullish setup | VWAP 633.30; Fib 627.39–630.40 | 643.15 high | Below 617.64 | Moderate; participation weak |
+| SPY | Cautiously bullish | 770.36 open, then 768.10 low | 772.47 high | Acceptance below 768.10 | FOMC-minute headline risk |
+| QQQ | Neutral-positive | 719–720 pivot/open area; 712.61 low | 721.50 high | Below 712.61 | NQ/SMH divergence |
+| SMH | Bearish/repair | 556.32 low | 575.06 open, 576.84 high | Long thesis remains invalid below open | Do not bottom-fish solely on index bounce |
 
-## Technical Analysis, Key Levels, and Chase Risk
+Gap-fill risk is highest in MRNA, EL, MRK, and AMLX. A loss of VWAP after a failed high-of-day breakout converts momentum into a gap-fade setup; do not average down through the session low.
 
-The preferred 0.500–0.618 pocket uses the reproducible two-session impulse from Friday's low to Monday's current high. Monday's high is provisional until the close. No order block is claimed without chart-history confirmation.
+## Tiered Opportunities
 
-| Ticker | Bias / status | VWAP | EMA20 / 50 / 200 | RSI | 0.500–0.618 pocket | Support | Resistance | Chase risk |
-|---|---|---:|---:|---:|---:|---|---|---|
-| GLW | Bullish, triggered | $173.37 | $161.33 / $168.17 / $143.99 | 56.5 | $165.39–$167.59 | $173.37, $169.74, $166.68 | $176.91, $180 | High after +6.3%; favor retest |
-| SMTC | Bullish, triggered | $151.16 | $133.71 / $134.02 / $108.75 | 60.9 | $141.19–$143.80 | $151.16, $143.99, $140.35 | $154.81, $160, $177.35 | Very high after +10.2% |
-| AAOI | Bullish, triggered | $154.53 | $127.53 / $130.38 / $105.17 | 63.4 | $141.08–$144.40 | $154.53, $150.28, $147.35 | $158.46, $165, $170 | Extreme after +15.5% Friday |
-| DIOD | Bullish, triggered | $107.50 | $96.88 / $96.49 / $82.68 | 60.5 | $102.27–$103.67 | $107.50, $103.71–$103.40 | $109.58, $115, $125.99 | High; pocket already tested |
-| VICR | Bullish, triggered | $249.33 | $229.12 / $246.18 / $203.01 | 57.1 | $235.86–$239.46 | $249.33, $242.18, $239.00 | $254.71, $260 | Very high; ATR about $20 |
-| TSEM | Bullish, triggered | $273.75 | $244.49 / $240.17 / $186.67 | 60.2 | $260.90–$264.15 | $273.75, $270.16, $268.00 | $277.88, $285 | High; low live rVol |
-| MXL | Bullish but slowing | $86.40 | $76.08 / $77.49 / $53.45 | 57.2 | $81.35–$82.81 | $86.40, $84.84, $83.74 | $89.00 | High after +10.7% Friday |
-| AMD | Neutral/pullback | $511.73 | $495.76 / $487.87 / $359.67 | 53.1 | $496.25–$500.27 | $506.33, $500–$496 | $517.35, $525 | Friday extension is consolidating |
+### A+ — conditional only
 
-## Setups and Risk Management
+**MRK long continuation**
 
-### Tier A — only on confirmation
+- **Trigger:** Hold 148.9 VWAP, then break and accept above 151.82; preferred entry is a pullback into 147.55–148.95 with a bullish reaction, not a vertical breakout chase.
+- **Invalidation:** 144.80–144.90. Entry 148.20 implies about $3.40 risk.
+- **Targets:** 151.82 (~1.06R), 155 (~2.00R), then 160 (~3.47R).
+- **Options angle:** Calls or a call debit spread only after checking live bid/ask, delta, IV, volume, and open interest. No chain was available, so no contract is recommended.
 
-**GLW pullback continuation:** Bias bullish while above $169.74. Entry idea: controlled pullback/reclaim near $173.40 VWAP, not a late high print. Confirmation: hold above VWAP and a higher low. Invalidation: below $169.70. Targets: $176.91, $180, then $185. From a $173.50 entry and $169.70 stop, $180 is about 1.7R and $185 about 3.0R. Cancel if electronic-technology breadth rolls over.
+**AMLX long continuation — event-risk sizing**
 
-**SMTC continuation:** Bias bullish but extended. Entry idea: only a VWAP retest/reclaim near $151.20 or a later base; confirmation above $154.81 must hold. Invalidation: below $148.80 after entry. Targets: $154.81, $160, then $165. A $151.50 entry with $148.80 stop offers about 1.2R to $154.81 and 3.1R to $160; skip if the first realistic target is already consumed.
+- **Trigger:** Hold 37.46 VWAP and clear 38.83, or pull back into 36.66–37.08 and reclaim 37.46.
+- **Invalidation:** Below 35.25–35.32. Entry near 37.00 implies about $1.75 risk.
+- **Targets:** 38.83 (~1.05R), 41.00 (~2.29R), then trail only if volume expands.
+- **Risk:** Biotech headline gaps can bypass stops. Shares or strictly defined-risk options only; never size this like MRK.
 
-**AAOI breakout/retest:** Bias bullish above VWAP. Entry idea: acceptance over $158.46 followed by a retest near $158.50. Invalidation: below $154.50. Targets: $165 and $170. Approximate R is 1.6R and 2.8R. The two-day expansion makes reduced size mandatory; cancel on loss of VWAP or sector divergence.
+### A — good structure, missing participation or too extended
 
-### Tier B — pullback only
+- **PODD:** Enter only on 150.71–151.69 support/reclaim or acceptance above 155.17. Stop below 147.80. From 151.30, targets 155.17 (~1.11R) and 160 (~2.49R). Low 0.23x RVOL is the main disqualifier.
+- **AXON:** Preferred pullback 627.40–633.30 with a bullish reaction; stop below 617.50; targets 643.15 (~1.14R from 629.50) and 655 (~2.13R). Do not chase on 0.24x RVOL.
+- **EL:** Preferred 95.91–97.15 pullback and VWAP reclaim; stop below 93.40; targets 99.82 (~1.06R from 96.50) and 103 (~2.10R). A fresh high without consolidation is lower quality.
 
-**DIOD:** Wait for either a controlled $107.50 VWAP hold or a deeper reaction into $102.27–$103.67. Do not buy the current vertical extension. Structural invalidation is below $97.75; targets $109.58, $115, then $125.99. **VICR:** wait for a $249.33 VWAP retest or $242.18 opening-price reclaim; invalidate below $239.00 and target $254.71/$260. Its roughly $20 ATR requires smaller size. **TSEM/MXL:** take only a VWAP or prior-close reclaim with sector confirmation; reject breakouts on declining relative volume.
+### B / watch only
 
-### Options angle
-
-No live chain was retrieved, so no contract, premium, delta, IV, open interest, or spread is quoted. For GLW, AAOI, AMD, and other options-listed leaders, use the underlying trigger first, then require a tight two-sided spread and meaningful open interest/volume in a regular monthly expiration with enough time for the thesis. SMTC, DIOD, VICR, TSEM, and MXL may have less favorable spreads; shares or no trade are preferable to forcing an illiquid contract.
+- **HTFL:** Needs 47.23 breakout with volume; 44.54 is invalidation. Thin options/liquidity context makes shares cleaner if traded.
+- **NUVB:** Momentum is valid, but price and biotech risk reduce quality. Wait for a defined base above 7.02; no chase into 7.58.
+- **TGT/TOL:** Strong earnings reversals, but both are extended from their opens. Watch only for an afternoon bull flag after the FOMC minutes.
 
 ## Stocks to Avoid
 
-- Low-float/microcap gappers such as IPST, IVF, TRUG, UCL, GCTK, SLE, and XPON were excluded from the primary universe regardless of headline percentage gains.
-- **WING, STUB, NRG, and LUMN:** passed Friday's momentum geometry but are materially red today; avoid treating a prior high close as a standing buy signal.
-- **SMTC, VICR, GLW, DIOD, AAOI:** avoid fresh entries at the current high; each needs a retest or base.
-- Any name with a wide option spread, missing liquidity, failed VWAP reclaim, or stop distance inconsistent with planned risk.
+- **MRNA:** 84.3% gap and triple-digit day gain; a normal retracement can be enormous. Watch, do not chase.
+- **ACMR:** Prior-session qualifier that failed today, below open and VWAP. No long until 80.73 and then 85 are reclaimed.
+- **ROIV/RVMD:** Prior-session momentum gapped up but faded below open/VWAP on weak RVOL.
+- **AVGO and fresh semiconductor longs:** AVGO is about -4.1% and SMH remains below its open. MRVL strength is stock-specific until the group repairs.
+- **Any new position immediately before 1:00 PM CDT FOMC minutes:** Headline volatility can invalidate otherwise clean technicals.
 
 ## Final Trading Plan
 
-The tape is a narrow Nasdaq/electronic-technology momentum pocket inside weak breadth. Prioritize **GLW near VWAP**, **SMTC only on a controlled $151 area retest**, and **AAOI only after $158.46 acceptance/retest**. Keep DIOD/VICR as pullback-only alternatives. Use AMD and QQQ as confirmation bars. If QQQ loses VWAP, VIX continues higher, or the large/mid-cap A/D ratio deteriorates, stop initiating longs. Define risk from the underlying structure, size down after multi-day expansion, and never use the stale pre-open fields as execution prices.
-
-**Sources:** [AP current U.S. market report](https://apnews.com/article/bf398d5a01f611921c0b48a8bfc884d9); [Kiplinger economic calendar](https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar); [Kiplinger earnings calendar](https://www.kiplinger.com/investing/stocks/17494/next-week-earnings-calendar-stocks); [Corning Q2 release](https://investor.corning.com/news-and-events/news/news-details/2026/Cornings-Strong-Second-Quarter-2026-Financial-Results1-Demonstrate-Progress-on-Recently-Upgraded-Springboard-Plan/default.aspx); [Diodes ElevATE announcement](https://investor.diodes.com/news-releases/news-release-details/diodes-incorporated-acquire-elevate-semiconductor-expanding); [Applied Optoelectronics news releases](https://appliedoptoelectronics.gcs-web.com/news-events/press-releases); TradingView public scanner snapshots captured August 17, 2026.
+1. Keep the broad bias cautiously bullish only while SPY holds 770.36 and especially 768.10; require QQQ to reclaim/hold 721.50 for stronger growth confirmation.
+2. Focus first on **MRK**; use **AMLX** only with reduced, defined event-risk. Let **PODD/AXON/EL** come to their VWAP/Fibonacci pockets.
+3. Do not chase MRNA, do not bottom-fish SMH, and do not rescue failed prior-session continuations.
+4. Reduce exposure ahead of the 1:00 PM CDT FOMC minutes. After the release, trade only confirmed VWAP acceptance or rejection with a structural stop.
+5. Risk one planned amount per setup, take partial profit near 1R/first supply, and cancel the trade if the session low or stated invalidation breaks.

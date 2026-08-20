@@ -1,141 +1,166 @@
-# Market-Open Trading Brief — Wednesday, August 19, 2026, 11:42 AM CDT
+# Market-Open Trading Brief — Thursday, August 20, 2026 — 12:09 PM CDT
 
-- **Market status:** U.S. regular session open; approximately 2 hours 12 minutes after the opening bell.
-- **Agent:** Codex
-- **Bias:** Cautiously bullish while SPY holds its opening range, but selective rather than broad risk-on. Health care, consumer discretionary, and materials lead; semiconductors remain the weak link.
-- **Highlight:** The cleanest conditional continuation is MRK above VWAP/151.82. AMLX has the strongest two-day momentum but carries binary biotech and extension risk. Do not chase MRNA's triple-digit gap.
+**Market status:** U.S. regular session open; this is a late opening-session snapshot, approximately 2 hours 39 minutes after the 9:30 AM ET opening bell.  
+**Agent: Codex**  
+**Generated:** Thursday, August 20, 2026, 12:09 PM CDT (America/Chicago)
 
-> Informational and research support only. No guarantee, investment advice, or trade placement.
+> Informational/research support only. No guarantees and no trade placement.
 
 ## Data Status
 
-- **Live market data used:** TradingView public U.S. stock/fund/futures scanner snapshots captured around 11:35–11:42 AM CDT: price, session open/high/low, daily change, gap, volume, 10-day relative-volume estimate, float where available, VWAP, RSI, and moving averages.
-- **Prior-session universe:** StatMuse return rankings for August 18, plus hourly OHLC/volume aggregated into regular-session open/high/low/close and close-location. Candidates below meet +3% and an exact calculated close-location of at least 80%. The hourly aggregation is a best-available public reconstruction, not an exchange-certified daily feed.
-- **Independent validation:** [Associated Press market coverage](https://apnews.com/article/stocks-futures-bonds-oil-inflation-trump-ai-9e355be634e4a21059fc1d1f20a1239e), [AP August 18 close recap](https://apnews.com/article/wall-street-stocks-dow-nasdaq-63300d6f51d4d27ce881cc6c11719171), and [Kiplinger economic calendar](https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar).
-- **Unavailable:** Interactive TradingView chart render, Claude Screeners, Level II/order flow, full higher-timeframe candle history, exact options chains, spreads, Greeks, open interest, and institutional dark-pool data. Order-block labels below are opening-range proxies, not validated higher-timeframe blocks. No contract premium or Greek is inferred.
+- **Used:** TradingView public U.S. stock/ETF/futures scanner snapshots collected about 12:04–12:09 PM CDT for current price, session change, open/high/low, volume, 10-day relative-volume calculation, market cap, and float where returned.
+- **Used:** Associated Press for live index tone, oil/yield pressure, Walmart's earnings reaction, weekly claims, and independent validation of the Moderna/Merck catalyst; Axios and Reuters-syndicated coverage for prior-session biotech performance; company/PRNewswire releases for Deere results; New York Fed/Kiplinger/Conference Board schedules and releases for the economic calendar.
+- **Primary prior-session screen:** best-available verified subset of liquid mid/large/mega-cap +3% leaders. The public scanner did not expose dependable August 19 daily OHLC history in this run, so exact close-location and prior-day volume are marked unavailable. A contemporaneous near-high proxy is used only where the closing report supports it. This is **not represented as an exhaustive exact-OHLC screen**.
+- **Unavailable:** authenticated TradingView chart workspace, full intraday candle history, Claude Screeners, exact prior-session OHLC close-location for the full universe, live option chains/Greeks/spreads/open interest, and a dependable real-time U.S. Treasury-yield quote. Formal order-block status and higher-timeframe Fibonacci anchors therefore remain unconfirmed.
+- **Partial-session warning:** current volume and relative volume are still accumulating; scanner relative volume is TradingView's 10-day calculation and may change through the close.
 
-## Market Regime, Futures, Overnight News, Calendar, and Internals
+## Market Regime and Bias
 
-The tape is attempting a rebound after three declining S&P 500 sessions. The prior session closed with the S&P 500 down 0.7%, Nasdaq Composite down 1.3%, Dow down 0.2%, and Russell 2000 down 1.3%; semiconductors and AI leaders supplied most of the pressure. Today, falling long-duration Treasury yields are relieving some valuation pressure, but the NDX/SOXX complex is lagging badly enough to keep the regime **selective and headline-sensitive**.
+**Bias: cautious bearish/selective, with catalyst-led long pockets.** The index tape is red and breadth is weak, while oil and bond-market pressure are working against broad risk appetite. Do not treat isolated large winners as proof of a healthy tape.
 
-| Instrument | Snapshot | Opening range / context |
+| Read | 12:04–12:09 PM CDT snapshot | Interpretation |
 |---|---:|---|
-| ES futures | 7,748.50, +0.45% | 7,698.25–7,764.75 |
-| NQ futures | 29,608.25, +0.08% | 29,375.75–29,757.25; clear laggard |
-| YM futures | 53,581, +0.33% | 53,337–53,780 |
-| RTY futures | 3,048.30, +0.72% | 3,019.80–3,059.10; breadth confirmation |
-| SPY | 771.50, +0.53% | 768.10–772.47; constructive above 770.36 open |
-| QQQ | 719.13, +0.23% | 712.61–721.50; recovered from opening weakness |
-| SMH / SOXX proxy | 564.55, -0.92% | 556.32–576.84; still below the open and restraining NDX |
-| IWM | 302.44, +0.74% | 301.44–303.41; participation better than mega-cap tech |
+| SPY / S&P 500 | 766.30, **-0.36%** | Below prior close; narrow risk appetite |
+| QQQ / NDX proxy | 712.29, **-0.53%** | Growth weaker than SPY |
+| IWM / small caps | 298.13, **-1.19%** | Clear risk-off confirmation |
+| SMH / SOXX context | direct SMH quote unavailable in returned batch; XLK **+0.01%** | Semiconductor-specific confirmation unavailable; technology broadly flat |
+| Breadth, $2B+ U.S. common stocks | **719 advancing / 1,201 declining / 9 flat** | About 37.4% advancers; sellers control breadth |
+| ES / NQ / RTY futures | **-0.38% / -0.49% / -1.15%** | Confirms cash-index weakness |
+| Crude oil | 86.08, **+2.00%** | Inflation/yield pressure; supports energy |
+| Gold | 4,566, **+0.46%** | Defensive bid remains present |
 
-- **Rates/news:** Treasury said it will at least double planned purchases of longer-dated Treasurys from September 9 through November 4. AP reported the 10-year yield near 4.65%, down from 4.71% Tuesday, and the 30-year near 5.20%, down from 5.28%.
-- **Commodities:** WTI futures 85.30, +1.48%; gold futures 4,549.70, +2.92%. High oil still matters for inflation and duration-sensitive growth.
-- **Economic calendar:** July FOMC minutes are due at **1:00 PM CDT / 2:00 PM EDT**. Reduce new risk before the release; stale limit orders are especially dangerous around the headline.
-- **Breadth:** Among TradingView U.S. stocks with market cap at least $2B: **2,032 advancers, 1,237 decliners, 42 unchanged** (about 1.64:1 positive). This supports the rebound, though it does not erase semiconductor weakness.
-- **Sector leadership:** XLV +2.88%, XLB +1.92%, XLY +1.91%, XLP +0.91%; XLE +0.27%. Lagging: XLI -0.59%, XLK -0.39%, XLU -0.33%, SMH -0.92%.
+Sector map: **XLE +0.71%** leads; XLK is flat. XLF -0.21%, XLV -0.70%, XLP -0.74%, XLI -0.73%, and XLY -1.37% show broad weakness. The practical regime is stock-picking, smaller size, and hard confirmation—not broad-market chasing.
+
+## Kenny Readout
+
+The tape is cautious bearish: SPY, QQQ, and IWM are red, breadth is roughly 37% advancing, and rising oil is reviving yield pressure. Focus on catalyst-backed relative strength in **DE** and the controlled prior-session hold in **MRK**; use **MARA** only as a smaller crypto-confirmed secondary. Avoid chasing **MRNA**, **WMT**, **TEM**, or extended crypto highs.
+
+## Futures, Overnight News, Economic Calendar, and Internals
+
+- Oil's renewed rise is pushing inflation and long-yield anxiety back into the foreground after Wednesday's Treasury buyback announcement briefly eased bond stress. AP reported the S&P 500 down about 0.3%, the Dow down roughly 344 points, and the Nasdaq down about 0.8% around 11:30 AM ET, consistent with the scanner snapshot.
+- **WMT** is the major negative index catalyst: 104.34, **-8.72%**, with 51.25M shares and 2.50 relative volume. U.S. comparable sales slowed to 2.6%; despite an adjusted EPS beat, cautious expectations and the quality of the outlook drove the selloff.
+- **Initial claims:** 206,000 versus a revised 212,000 prior; layoffs remain sparse. The four-week average rose to 204,000 from 199,750. This is firm labor data, not an immediate dovish release.
+- **Leading Economic Index:** July LEI rose **0.2%** to 99.5 after a revised 0.1% June decline. The release points to continued expansion, with AI investment offset by consumer cost pressure.
+- **Philly Fed:** scheduled for 8:30 AM ET, but the exact August result was not independently validated in this run; do not trade from an unverified number.
+- **EIA natural gas storage:** 10:30 AM ET release; exact result unavailable here.
+- After-close earnings include ROST and other smaller reporters. The high-impact morning reactions—WMT and DE—are already in the tape.
 
 ## Prior-Session +3% Momentum Universe
 
-Screen: mid/large/mega-cap return of at least 3% on August 18 and reconstructed close-location at or above 80%. Dollar volume is approximate close × reconstructed volume. Names failing the close-location gate were excluded even if their return exceeded 3%.
+This is the **liquid, independently verified near-high-proxy subset** from Wednesday, August 19. Exact daily OHLC close-location was unavailable, so no numerical `(close-low)/(high-low)` value is invented.
 
-| Ticker | Company | Aug. 18 gain | Close-location | Reconstructed volume / dollar volume | Catalyst / context |
-|---|---|---:|---:|---:|---|
-| AMLX | Amylyx Pharmaceuticals | +17.39% | 96.2% | 601K / ~$21.1M | Positive Phase 3 LUCIDITY avexitide result; binary biotech risk remains |
-| HTFL | Heartflow | +8.99% | 98.4% | 161K / ~$7.3M | Follow-through after Q2 loss beat, raised revenue guidance, and analyst-target activity; thinner liquidity |
-| LEGN | Legend Biotech | +6.30% | 98.7% | 150K / ~$3.3M | No same-day catalyst independently confirmed |
-| NUVB | Nuvation Bio | +5.94% | 98.0% | 545K / ~$3.8M | No same-day catalyst independently confirmed |
-| PODD | Insulet | +5.80% | 86.5% | 79K / ~$11.7M | Rebound after an earlier post-earnings selloff; recent Omnipod growth strong but FY26 sales outlook was reduced |
-| ACMR | ACM Research | +5.61% | 90.9% | 90K / ~$7.6M | Semiconductor rebound attempt; no same-day catalyst independently confirmed |
-| ROIV | Roivant Sciences | +4.07% | 96.2% | 341K / ~$12.8M | No same-day catalyst independently confirmed |
-| AXON | Axon Enterprise | +4.03% | 82.2% | 20K / ~$12.3M | Institutional-quality name, but reconstructed share volume is low and should be treated cautiously |
-| RVMD | Revolution Medicines | +3.28% | 93.5% | 83K / ~$17.9M | Biotechnology momentum; no same-day catalyst independently confirmed |
-| MNST | Monster Beverage | +3.16% | 92.0% | 812K / ~$38.5M | Defensive-growth rotation; no same-day catalyst independently confirmed |
+| Ticker | Company | Aug. 19 gain | Close-location test | Volume/liquidity context | Catalyst |
+|---|---|---:|---|---|---|
+| MRNA | Moderna | **+177.0%** | **Proxy pass:** contemporaneous closing coverage described a best-ever surge that finished around the session's upper extreme; exact H/L unavailable | Mega-volume event; current market cap about $52.0B and float 365.3M; options normally active, chain not checked | Phase 3 intismeran + Keytruda melanoma trial met its key endpoint |
+| MRK | Merck | **+12.6%** | **Proxy pass:** closed at roughly 152.20 after a sustained catalyst rally; exact H/L unavailable | Mega-cap, current market cap about $374.7B and float 2.46B; highly liquid options, chain not checked | Co-developer of the successful melanoma treatment with Moderna |
+| BNTX | BioNTech ADR | **about +21%** | **Proxy pass:** Reuters-syndicated close coverage reported a strong spillover rally into the close; exact H/L unavailable | Current market cap about $28.4B; 250.1M float; options exist, chain not checked | mRNA-oncology sympathy / sector re-rating |
 
-**Gate exclusions:** HSAI +8.53% closed at 75.0% of its range; ULTA +4.02% at 72.9%; RBA +3.98% at 79.3%; DT +3.47% at 78.9%; SPOT +3.40% at 62.3%; BBIO +3.38% at 73.3%; UI +3.32% at 56.2%; HUBS/FIG/SAIL did not have reliable qualifying daily reconstructions. They are not promoted into the primary universe.
+**Not admitted to the core table:** NVAX gained roughly 8% in the biotech sympathy move but is currently about $1.36B in market cap, below this brief's mid-cap floor. ADI rose more than 3% after a beat/guidance response, but exact August 19 close-location could not be validated, so it remains context rather than a qualified primary-universe name.
 
 ## Opening-Session Continuation and Gap Update
 
-| Ticker | Current | Day change | Gap | Volume | RVOL | Float | Read |
-|---|---:|---:|---:|---:|---:|---:|---|
-| AMLX | 38.24 | +8.91% | +2.91% | 4.72M | 1.20x | 94.6M | Best two-day continuation; above 37.46 VWAP, testing 38.83 high |
-| AXON | 639.10 | +3.10% | +0.14% | 275K | 0.24x | unavailable | Constructive but low participation; 643.15 is confirmation |
-| PODD | 151.94 | +2.64% | -0.02% | 498K | 0.23x | 69.1M | Above VWAP, but volume does not validate an aggressive chase |
-| HTFL | 45.62 | +0.86% | +1.75% | 1.52M | 0.62x | 64.4M | Holding above prior close; 47.23 remains supply |
-| NUVB | 7.21 | +3.58% | +2.87% | 6.63M | 1.07x | 251.1M | Positive continuation, but small-dollar biotech volatility |
-| MNST | 47.27 | -0.23% | -0.22% | 3.07M | 0.27x | 1.39B | Flat digestion rather than continuation |
-| ROIV | 36.84 | -1.43% | +1.23% | 1.69M | 0.26x | 524.1M | Gap faded; below open, no long trigger |
-| RVMD | 213.88 | -0.98% | +1.31% | 456K | 0.28x | 192.8M | Gap faded below VWAP; wait |
-| ACMR | 79.35 | -5.95% | +0.75% | 454K | 0.45x | 58.1M | Failed continuation; avoid until it reclaims 80.73 VWAP/85 open |
+| Ticker | Current | Session | Gap at open | Volume / rel. volume | Float | Opening behavior |
+|---|---:|---:|---:|---:|---:|---|
+| MRNA | 130.50 | **-25.17%** | **-13.90%** | 64.38M / 2.55x | 365.3M | Near session low: only 5% up today's range; continuation failed |
+| MRK | 151.92 | -0.18% | -0.93% | 7.55M / 0.72x | 2.46B | Recovered from 148.52 and sits in top 15% of opening range; best relative hold |
+| BNTX | 110.75 | -2.10% | -3.59% | 2.43M / 1.47x | 250.1M | Recovered from 106.38; still below prior close and 112.39 high |
+| ADI | 375.45 | +0.59% | +0.98% | 1.37M / 0.40x | 485.8M | Faded from 384.95; only 22% up today's range |
 
-## Catalysts, Earnings Reactions, and Current Momentum
+The prior-session biotech move is **not broadly continuing**. MRK alone is showing constructive relative strength; MRNA is a textbook gap-reversal/chase-risk warning, and BNTX needs a reclaim before it is actionable.
 
-- **MRNA 144.29, +129.17%, 119.3M shares, 20.52x RVOL:** Moderna and Merck announced encouraging initial melanoma-vaccine study results. AP independently reported better recurrence-free survival for the combination with Keytruda than Keytruda alone. The move is real, but the stock is far too extended for an opening chase.
-- **MRK 150.11, +11.05%, 19.8M, 2.41x RVOL:** Same validated melanoma-vaccine catalyst; much cleaner institutional liquidity and less extreme extension than MRNA.
-- **EL 98.15, +16.47%, 7.93M, 3.14x RVOL:** Earnings beat and accelerating revenue growth, with AP citing strength in mainland China. High-quality momentum but already extended above the 93.74 open.
-- **TGT 160.27, +5.11%, 5.39M, 1.26x RVOL:** Better-than-expected profit reaction, though the stock initially gapped down 3.07% before reversing sharply.
-- **LOW 221.01, +2.49%, 2.36M, 0.99x RVOL; TOL 152.80, +6.96%, 605K, 0.70x RVOL:** Positive earnings reactions support housing/consumer cyclicals despite still-high mortgage rates.
-- **Other live momentum:** TEM +23.76% (3.10x RVOL), CDE +14.40%, MSTR +14.63%, MRVL +9.64% (1.45x RVOL), COIN +12.71%, HOOD +7.84%, CRM +5.60%, UBER +5.40%. Crypto and metals participation is broad, but avoid confusing it with semiconductor recovery: AVGO remains about -4.1% and SMH is negative.
+## Catalysts, Earnings Reactions, and Sector Strength
 
-## Technical Map and Chase Risk
+- **DE:** 630.21, +8.54%, 1.85 relative volume. Deere reported quarterly net income of $1.379B, $5.10 per share, and improved full-year net-income guidance to $4.75B–$5.00B. This is the cleanest liquid institutional catalyst long.
+- **WMT:** -8.72% on 2.50 relative volume. The report's EPS beat did not offset slow U.S. comps and cautious near-term expectations. Its Dow/consumer weight is a market headwind.
+- **MRNA/MRK/BNTX:** Wednesday's cancer-vaccine re-rating is being digested. MRK's stability versus MRNA's collapse argues for quality/partner preference, not indiscriminate biotech momentum.
+- **Crypto complex:** MARA +11.92%, COIN +7.9%, MSTR +7.7%, RIOT +5.7%, and CLSK +6.4% confirm a broad crypto-linked bid. This is tradable momentum but highly correlated and vulnerable to a fast Bitcoin reversal.
+- **Energy/materials:** crude +2.0%, XLE +0.71%; CF, MOS, and related commodity names are firm. Higher oil simultaneously supports energy and hurts the index inflation narrative.
+- **Health/AI diagnostics:** TEM +10.30% at 2.56 relative volume and IOVA +9.0% are strong, but a fresh independent same-day catalyst was not verified; treat them as price/volume setups only.
 
-Because full chart candles are unavailable, the zones below use the current opening range, VWAP, and the 0.500–0.618 retracement of today's low-to-high impulse. Treat the low/open/VWAP clusters as **demand proxies**, not formally validated higher-timeframe bullish order blocks. The session high is the nearest supply/liquidity obstacle.
+## Current Momentum List
 
-| Ticker | Bias/status | Demand proxy / 0.500–0.618 pocket | Supply / trigger | Structural invalidation | Chase risk |
+1. **DE** — +8.54%, catalyst-confirmed, 1.85x relative volume, large-cap liquidity.
+2. **TEM** — +10.30%, 2.56x relative volume, holding above 80% of today's range; catalyst unverified.
+3. **MARA** — +11.92%, 45.9M shares, crypto-group confirmation; high-beta correlation risk.
+4. **MRVI** — +14.4%, 2.29x relative volume, but only about $2.1B market cap; secondary.
+5. **CRCL / COIN / MSTR** — +8.1% / +7.9% / +7.7%; liquid crypto basket, not independent trades.
+6. **MRK** — flat on the day but the strongest hold from the actual prior-session momentum universe.
+7. **LITE** — +5.2% and near session high, though relative volume is only about 0.38x; confirmation is weak.
+
+## Technical Analysis and Key Levels
+
+Because full candle charts were unavailable, the zones below are **opening-range structure proxies**, not confirmed higher-timeframe order blocks. Fibonacci pockets use the visible session impulse and Kenny's preferred **0.500–0.618 retracement**. Require a reaction/reclaim; a touch alone is not confirmation.
+
+| Ticker | Bias/status | Opening support | Resistance | 0.500–0.618 pocket | Gap/chase risk |
 |---|---|---|---|---|---|
-| MRK | Bullish setup | VWAP 148.94; Fib 147.54–148.36 | 151.82 high | Below 144.90 session low | Moderate; avoid >152 without hold/retest |
-| AMLX | Bullish, triggered | VWAP 37.46; Fib 36.66–37.08 | 38.83 high | Below 35.32 | High due two-day biotech extension |
-| EL | Bullish setup | VWAP 97.15; Fib 95.91–96.66 | 99.82 high | Below 93.50 | High; RSI about 73 |
-| PODD | Bullish setup | VWAP 151.69; Fib 150.71–151.56 | 155.17 high | Below 147.96 | Moderate; RVOL too weak for chase |
-| AXON | Bullish setup | VWAP 633.30; Fib 627.39–630.40 | 643.15 high | Below 617.64 | Moderate; participation weak |
-| SPY | Cautiously bullish | 770.36 open, then 768.10 low | 772.47 high | Acceptance below 768.10 | FOMC-minute headline risk |
-| QQQ | Neutral-positive | 719–720 pivot/open area; 712.61 low | 721.50 high | Below 712.61 | NQ/SMH divergence |
-| SMH | Bearish/repair | 556.32 low | 575.06 open, 576.84 high | Long thesis remains invalid below open | Do not bottom-fish solely on index bounce |
+| DE | Bullish, extended / wait | 611.12 open, then 606.5–612.7 pocket; 586.48 session low | 630 area, then 639.00 high | **606.5–612.7**, anchored 586.48→639.00 | High at 630+; about 3% above preferred pocket |
+| MRK | Bullish-neutral / setup | 150.04–150.52 pocket, then 148.52 low | 152.52, then 155 and 158 | **150.04–150.52**, anchored 148.52→152.52 | Moderate; catalyst gap was largely repaired intraday |
+| MARA | Bullish / extended | 10.32–10.43 pocket, then 9.96 low | 10.90, then 11.40 | **10.32–10.43**, anchored 9.96→10.90 | High near 10.80; crypto reversal can erase the gap |
+| BNTX | Neutral recovery / pending | 109.06 open, then 106.38 low | 112.39, prior close about 113.13 | Intraday impulse is not clean enough to force a pocket | Gap down remains unfilled; needs 112.39 reclaim |
+| MRNA | Bearish / failed continuation | 129.21 only immediate support | 150.14 open, 155 high, prior close about 174.4 | No reliable long pocket after failed gap | Extreme; do not average into event unwind |
 
-Gap-fill risk is highest in MRNA, EL, MRK, and AMLX. A loss of VWAP after a failed high-of-day breakout converts momentum into a gap-fade setup; do not average down through the session low.
+The nearest actionable demand-to-supply spans are DE 606.5–612.7 to 639, MRK 150.0–150.5 to 152.5/155, and MARA 10.32–10.43 to 10.90. Higher-timeframe bearish supply is unavailable, so targets remain intraday structural objectives rather than guaranteed paths.
 
-## Tiered Opportunities
+## Tiered Opportunities and A+ Candidates
 
-### A+ — conditional only
+The only A+ path is conditional, not immediate: DE must reset into 606.5–612.7 and reclaim, while MRK must hold/reclaim 150.0–150.5 or accept above 152.52. MARA is Tier B on a 10.32–10.43 reset; BNTX remains pending below 112.39.
 
-**MRK long continuation**
+### Tier A — DE catalyst pullback (A+ only if price returns to structure)
 
-- **Trigger:** Hold 148.9 VWAP, then break and accept above 151.82; preferred entry is a pullback into 147.55–148.95 with a bullish reaction, not a vertical breakout chase.
-- **Invalidation:** 144.80–144.90. Entry 148.20 implies about $3.40 risk.
-- **Targets:** 151.82 (~1.06R), 155 (~2.00R), then 160 (~3.47R).
-- **Options angle:** Calls or a call debit spread only after checking live bid/ask, delta, IV, volume, and open interest. No chain was available, so no contract is recommended.
+- **Bias/status:** bullish setup, not an A+ chase at 630+.
+- **Trigger/entry:** wait for 606.5–612.7, ideally near 611–613, then require a reclaim/hold and a higher low. Alternative momentum entry only after a clean break and retest above 639.
+- **Invalidation:** below 605.5 for the pocket entry; the wider thesis fails below 586.48. Size to the chosen structural stop—do not widen after entry.
+- **Targets:** from an illustrative 612 entry and 605.5 stop, 630 is about 2.8R and 639 about 4.2R. A 639 breakout needs a new base; do not reuse the pullback stop.
+- **Options angle:** DE options are generally liquid, but today's chain, IV, spreads, OI, and Greeks were unavailable. Prefer sufficient time and a near-the-money/high-delta contract only after checking spreads; no contract recommendation is made.
 
-**AMLX long continuation — event-risk sizing**
+### Tier A — MRK controlled continuation
 
-- **Trigger:** Hold 37.46 VWAP and clear 38.83, or pull back into 36.66–37.08 and reclaim 37.46.
-- **Invalidation:** Below 35.25–35.32. Entry near 37.00 implies about $1.75 risk.
-- **Targets:** 38.83 (~1.05R), 41.00 (~2.29R), then trail only if volume expands.
-- **Risk:** Biotech headline gaps can bypass stops. Shares or strictly defined-risk options only; never size this like MRK.
+- **Bias/status:** bullish-neutral setup; strongest relative hold from the primary universe.
+- **Trigger/entry:** 150.0–150.5 pullback plus reclaim, or acceptance above 152.52. Avoid buying a wick through resistance.
+- **Invalidation:** below 148.50.
+- **Targets:** from 150.5 with a 148.5 stop, 152.5 is 1.0R, 155 is 2.25R, and 158 is 3.75R.
+- **Options angle:** liquid underlying and usually tradable chain, but no live contract data. Use calls only after confirmation and avoid inflated event IV unless the actual chain shows acceptable spreads and volatility.
 
-### A — good structure, missing participation or too extended
+### Tier B — MARA crypto continuation
 
-- **PODD:** Enter only on 150.71–151.69 support/reclaim or acceptance above 155.17. Stop below 147.80. From 151.30, targets 155.17 (~1.11R) and 160 (~2.49R). Low 0.23x RVOL is the main disqualifier.
-- **AXON:** Preferred pullback 627.40–633.30 with a bullish reaction; stop below 617.50; targets 643.15 (~1.14R from 629.50) and 655 (~2.13R). Do not chase on 0.24x RVOL.
-- **EL:** Preferred 95.91–97.15 pullback and VWAP reclaim; stop below 93.40; targets 99.82 (~1.06R from 96.50) and 103 (~2.10R). A fresh high without consolidation is lower quality.
+- **Bias/status:** bullish but extended and secondary to the primary universe.
+- **Trigger/entry:** 10.32–10.43 pullback/reclaim with Bitcoin and COIN/MSTR still firm.
+- **Invalidation:** below 9.95.
+- **Targets:** 10.90 first, then 11.40. From 10.43 with a 9.95 stop, these are about 1.0R and 2.0R.
+- **Risk:** this is one correlated crypto trade, not diversification. Avoid simultaneous full-risk positions across MARA, COIN, MSTR, RIOT, and CLSK.
 
-### B / watch only
+### Tier B — BNTX recovery only
 
-- **HTFL:** Needs 47.23 breakout with volume; 44.54 is invalidation. Thin options/liquidity context makes shares cleaner if traded.
-- **NUVB:** Momentum is valid, but price and biotech risk reduce quality. Wait for a defined base above 7.02; no chase into 7.58.
-- **TGT/TOL:** Strong earnings reversals, but both are extended from their opens. Watch only for an afternoon bull flag after the FOMC minutes.
+- **Bias/status:** neutral/pending.
+- **Trigger:** reclaim and hold above 112.39, then clear the approximately 113.13 prior-close gap-fill level.
+- **Invalidation:** below 109.00 on a reclaim setup; hard structural failure below 106.38.
+- **Targets:** 115.5 then 118, only after gap-fill acceptance. No entry while it remains trapped below 112.39.
 
 ## Stocks to Avoid
 
-- **MRNA:** 84.3% gap and triple-digit day gain; a normal retracement can be enormous. Watch, do not chase.
-- **ACMR:** Prior-session qualifier that failed today, below open and VWAP. No long until 80.73 and then 85 are reclaimed.
-- **ROIV/RVMD:** Prior-session momentum gapped up but faded below open/VWAP on weak RVOL.
-- **AVGO and fresh semiconductor longs:** AVGO is about -4.1% and SMH remains below its open. MRVL strength is stock-specific until the group repairs.
-- **Any new position immediately before 1:00 PM CDT FOMC minutes:** Headline volatility can invalidate otherwise clean technicals.
+- **MRNA longs:** failed continuation, -25%, huge volume, and price near the session low. Do not confuse yesterday's catalyst with today's tape.
+- **WMT bottom-fishing:** -8.7% with 2.5x relative volume and weak comps/outlook interpretation. A bounce is not a reversal until it forms and reclaims structure.
+- **DE/MARA market orders near highs:** both are extended well above their preferred retracement pockets.
+- **TEM chase:** excellent relative volume but no independently validated same-day catalyst in this run; wait for a base or pullback.
+- **Low-float sympathy names and sub-$2B biotech:** excluded from the primary universe regardless of percentage gain.
+- **Multiple crypto longs:** they share one underlying factor and can fail together.
+
+## Risk Management
+
+- Start below normal size while SPY/QQQ/IWM and breadth remain negative. Add only after the trigger holds, not on anticipation.
+- Risk from entry to structural invalidation; cap total correlated exposure. A clean setup is still a poor trade if the stop requires more dollars than the risk budget allows.
+- Require at least about 2R to the realistic second target after accounting for nearby supply. Take partials at the first obstacle and move risk only after price earns it.
+- For options, verify expiration, bid/ask width, open interest, volume, IV, and delta before entry. None of those contract metrics was available here, so shares/underlying levels control the plan.
 
 ## Final Trading Plan
 
-1. Keep the broad bias cautiously bullish only while SPY holds 770.36 and especially 768.10; require QQQ to reclaim/hold 721.50 for stronger growth confirmation.
-2. Focus first on **MRK**; use **AMLX** only with reduced, defined event-risk. Let **PODD/AXON/EL** come to their VWAP/Fibonacci pockets.
-3. Do not chase MRNA, do not bottom-fish SMH, and do not rescue failed prior-session continuations.
-4. Reduce exposure ahead of the 1:00 PM CDT FOMC minutes. After the release, trade only confirmed VWAP acceptance or rejection with a structural stop.
-5. Risk one planned amount per setup, take partial profit near 1R/first supply, and cancel the trade if the session low or stated invalidation breaks.
+**Cautious bearish tape; trade only catalyst-backed relative strength.** Keep DE first, but buy only a 606.5–612.7 pullback/reclaim or a 639 break-and-retest. Keep MRK second: 150.0–150.5 support must hold, or wait for acceptance above 152.52. MARA is a smaller secondary trade only on a 10.32–10.43 reset with the crypto group intact. Do not chase MRNA, WMT, TEM, or correlated crypto highs. If SPY loses 765.23, QQQ loses 710.13, or breadth deteriorates further, reduce long exposure; if both ETFs reclaim their session highs (SPY 768.15, QQQ 714.94) with improving breadth, the tape can be upgraded from cautious bearish to neutral.
+
+### Sources
+
+- [AP: live market, oil/yield and Walmart pressure](https://apnews.com/article/1dcf7c9c3cc490b82b2632302628c46b)
+- [AP: Moderna/Merck cancer-vaccine catalyst](https://apnews.com/article/2330dce708b0af215b68570b19d025df)
+- [Axios: August 19 MRNA and MRK closing performance](https://www.axios.com/newsletters/axios-closer-74649dc6-fb50-490b-b4a4-d4fc2e8e3389)
+- [AP: weekly jobless claims](https://apnews.com/article/5d623586cbcf1eeeaa6ee6cc084ed566)
+- [Deere third-quarter release](https://www.prnewswire.com/news-releases/deere-reports-third-quarter-net-income-of-1-379-billion-302856316.html)
+- [Conference Board: July Leading Economic Index](https://www.prnewswire.com/news-releases/the-conference-board-leading-economic-index-lei-for-the-us-edged-up-in-july-302856410.html)

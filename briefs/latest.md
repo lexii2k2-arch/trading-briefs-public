@@ -1,6 +1,6 @@
-# Market-Open Trading Brief — Monday, August 24, 2026, 9:27 AM CDT
+# Market-Open Trading Brief — Tuesday, August 25, 2026, 8:04 AM CDT
 
-**Market status:** U.S. regular session open; opening range in progress (about 57 minutes after the 8:30 AM CDT cash open)
+**Market status:** U.S. regular session not yet open; scheduled cash open is 8:30 AM CDT. This run arrived before the stated 9:00 AM automation time, so regular-session price, volume, breadth, and opening-range behavior are not yet available.
 
 **Agent:** Codex
 
@@ -8,122 +8,154 @@
 
 ## Executive Read
 
-**Bias: neutral-to-bearish index tape, selective long rotation.** The Dow is green while the S&P 500, Nasdaq-100, Russell 2000, and especially semiconductors are red. The cleanest strength is in financials, staples, and materials; technology is the pressure point. Do not treat green single stocks as permission to chase while QQQ and SOXX/SMH remain below their opening prints.
+**Bias: cautiously bullish into the open, but confirmation-dependent.** Index futures are green and the Nasdaq-100 is leading as semiconductors rebound from Monday's sharp selloff. The improvement is real in premarket pricing, but it is still a bounce ahead of Nvidia earnings rather than a confirmed trend repair. The clean rule is to require SPY, QQQ, and SOXX/SMH to hold their premarket supports after the cash open before treating the tape as risk-on.
 
-**S&P / NDX / SOXX context:** SPY 762.64 (-0.40%) is near its 762.08 opening low; QQQ 702.97 (-1.47%) is sitting on its 702.70 low; SMH 541.54 (-3.37%) is close to 540.75. That is a risk-off growth backdrop despite DIA +0.22%. Focus tickers: **CLF, DIS, MSTR** for conditional longs and **MRVL** for a conditional failed-reclaim short. The highlight is **rotation, not broad risk-on continuation**.
+**S&P / NDX / SOXX context:** ES +0.38%, NQ +0.80%, RTY +0.53%, and YM +0.43%. SPY is indicated near 766.37 (+0.38%), QQQ 711.81 (+0.78%), SOXX 517.75 (+2.29%), and SMH 556.95 (+1.86%). Focus tickers are **V, CELH, and FIVE** from the exact prior-session continuation universe, with **INTC and MRVL** as secondary semiconductor-rebound watches. The highlight is **a chip-led rebound attempt that still needs cash-session acceptance**.
 
 ## Data Status
 
-- **Used:** TradingView public scanner at approximately 9:02–9:27 AM CDT for live stocks, ETFs, futures, opening ranges, volume, displayed 10-day relative-volume factor, float, market cap, and breadth; TradingView economic-calendar endpoint for scheduled U.S. events and the released Chicago Fed reading.
-- **Live/usable:** Regular-session price, open/high/low, change, raw volume, displayed relative-volume factor, float, sector ETFs, index ETFs, futures, and $2B+ NYSE/Nasdaq breadth.
-- **Unavailable:** Exact August 21 historical OHLC screen needed to prove the full prior-session +3% / top-20%-of-range universe. The historical Nasdaq/Yahoo routes did not return usable data. TradingView/Chrome chart confirmation, Claude Screeners, live SOXX quote, time-of-day-normalized RVOL, option chains/Greeks/open interest/spreads, and a reliable overnight headline feed were unavailable.
-- **Reliability treatment:** No Friday return or close-location value is invented. The prior-session table below is a clearly labeled continuity proxy, not a claim that every row passed the exact rule. Current figures can change quickly.
+- **Used:** TradingView public scanner at approximately 8:00–8:04 AM CDT for exact August 24 regular-session OHLC, change, volume, dollar volume, market cap, float, displayed 10-day relative volume, premarket price/range/volume, futures, index ETFs, sector ETFs, and premarket breadth; Associated Press for overnight/global-market context and Monday's index close; Kiplinger for the scheduled U.S. economic calendar; Reuters-syndicated and other independently indexed reporting for the technology rebound and selected catalysts; Expedia's investor-relations release for its latest earnings context.
+- **Exact and usable:** August 24 +3% screen, close-location calculation, regular-session volume/liquidity, premarket gap and raw premarket volume, futures, premarket ETF indications, and premarket breadth among $2B+ NYSE/Nasdaq securities.
+- **Unavailable at the 8:04 AM snapshot:** Current regular-session price and volume, cash-session opening range, cash-session market internals, time-of-day-normalized RVOL, TradingView/Chrome full chart-history confirmation, Claude Screeners, live option chains/Greeks/open interest/spreads, and confirmed order-block boundaries.
+- **Reliability treatment:** Premarket quotes are labeled as such and are not presented as opening-session trades. The displayed prior-session relative-volume factor is a 10-day TradingView measure, not a time-normalized opening RVOL. Price zones below are observable OHLC/premarket levels; none is called a confirmed order block without chart-history validation.
 
-## Market Regime, Futures, Calendar, and Internals
+## Market Regime, Futures, Overnight News, Calendar, and Internals
 
-At the snapshot, ES was 7,664.25 (-0.35%), NQ 28,994.25 (-1.34%), RTY 3,006.9 (-0.50%), and YM 53,466 (+0.21%). Gold was +0.88%, crude -1.98%, and VIX 15.96 (+5.49%). The cross-asset read favors defense and value over duration-sensitive growth.
+At the snapshot, ES was 7,699 (+0.38%), NQ 29,337.5 (+0.80%), RTY 3,017.5 (+0.53%), and YM 53,721 (+0.43%). Gold was nearly flat and crude was 82.32 (-3.16%). VIX had closed Monday at 15.84, essentially flat. Falling oil and positive futures support the rebound, but the scheduled Nvidia report Wednesday and Friday's Fed-chair speech keep event risk elevated.
 
-Breadth among $2B+ NYSE/Nasdaq common stocks was **1,244 advancing / 926 declining**. Positive breadth is being masked by mega-cap technology pressure: XLK -2.24% and SMH -3.37% versus XLF +1.37%, XLP +1.42%, XLB +0.91%, XLU +0.36%, and XLY +0.28%. This is rotation breadth, not clean index confirmation.
+Overnight, AP reported mostly higher European and Asian shares, new U.S. sanctions pressure on Iran, escalating U.S.-Canada trade friction, and lower oil. Monday's cash session was mixed: the S&P 500 lost 0.3%, the Nasdaq Composite lost 0.8%, the Russell 2000 lost 0.8%, and the Dow gained 0.3%. Nvidia fell 2.9%, Micron 5.8%, and Broadcom 2.6%, leaving Tuesday's semiconductor strength as a rebound from a damaged short-term tape rather than proven continuation.
 
-The Chicago Fed National Activity Index for July printed **-0.08** versus **0.06 prior** at 7:30 AM CDT. Three- and six-month Treasury bill auctions are scheduled for 10:30 AM CDT; Treasury Secretary Bessent is scheduled to speak at 1:00 PM CDT. No other high-confidence U.S. release was verified in the available calendar feed.
+Today's scheduled calendar, in Central time, is Case-Shiller home prices at 8:00 AM; new-home sales, Conference Board consumer confidence, and Richmond manufacturing at 9:00 AM. Those 9:00 AM releases can reverse the first 30 minutes of price discovery. Nvidia reports Wednesday after the close; Friday brings the Fed chair's Jackson Hole remarks.
 
-## Prior-Session +3% Near-High Universe — Partial / Proxy Only
+Premarket breadth among 2,416 scanned $2B+ NYSE/Nasdaq securities showed 1,445 with a premarket print: **841 advancing / 517 declining / 87 flat**. Among names with at least 50,000 premarket shares, breadth was **93 advancing / 41 declining**. This is supportive but is not a substitute for cash-session advance/decline, up/down volume, or tick data.
 
-The exact August 21 historical screen failed, so **no name below is certified as meeting both +3% Friday gain and >=80% close-location**. This is the best available liquid continuity proxy using Monday price action and five-session context; Friday-specific fields are explicitly unavailable.
+## Prior-Session +3% Near-High Momentum Universe
 
-| Ticker | Company | Aug. 21 gain | Close location | Liquidity context | Catalyst/context |
+The primary screen required market cap of at least $2B, August 24 gain of at least 3%, regular-session volume of at least 500,000 shares, and close location in the top 20% of the daily range. Seventy-two names met the initial gain/liquidity gate; the table shows the highest-dollar-volume exact close-location qualifiers.
+
+| Ticker | Company | Aug. 24 gain | Close location | Volume / liquidity | Catalyst or context |
 |---|---|---:|---:|---|---|
-| MSTR | Strategy | Unavailable | Unavailable | $47.6B cap; 12.7M shares by 9:27; 363.6M float | Crypto-proxy momentum; +31.1% five-session context |
-| DIS | Walt Disney | Unavailable | Unavailable | $192.1B cap; 3.1M shares; 1.72B float | Current strength; no fresh independent Monday catalyst confirmed |
-| MARA | MARA Holdings | Unavailable | Unavailable | $4.47B cap; 11.6M shares; 377.8M float | Crypto-miner continuation; +29.8% five-session context |
-| RIOT | Riot Platforms | Unavailable | Unavailable | $7.67B cap; 4.3M shares; 347.6M float | Crypto-miner sympathy; +8.2% five-session context |
-| CLSK | CleanSpark | Unavailable | Unavailable | $3.09B cap; 4.2M shares; 246.6M float | Crypto-miner sympathy; weaker than MARA/RIOT today |
+| V | Visa | +3.06% | 90.9% | 8.48M; ~$3.24B value traded; $714B cap | Payments leadership; recent beat/raise, disclosed institutional interest, and analyst support independently reported |
+| MA | Mastercard | +3.31% | 99.2% | 3.12M; ~$1.87B; $525B cap | Payments sympathy/rotation plus independently reported financial-disclosure buying |
+| CVNA | Carvana | +3.46% | 85.1% | 9.61M; ~$695M; $79.6B cap | High-beta consumer momentum; no fresh company-specific Monday catalyst independently confirmed |
+| MO | Altria | +3.60% | 87.2% | 10.12M; ~$693M; $114B cap | Defensive/value rotation; fresh catalyst unavailable |
+| CMG | Chipotle | +3.04% | 94.9% | 18.20M; ~$692M; $48.1B cap | Consumer rebound/flow; fresh catalyst unavailable |
+| FIVE | Five Below | +4.99% | 93.4% | 2.04M; ~$536M; $14.5B cap | All-time-high momentum following recent upgrades and ownership disclosures; no new company release verified Monday |
+| EXPE | Expedia | +5.44% | 88.8% | 1.56M; ~$530M; $40.7B cap | Post-earnings strength; Aug. 5 results beat guidance and raised the full-year outlook |
+| CELH | Celsius | +5.01% | 86.9% | 12.84M; ~$450M; $8.86B cap | Institutional/activist interest and post-earnings recovery remained the best available explanation |
+| AJG | Arthur J. Gallagher | +3.10% | 96.2% | 1.53M; ~$417M; $69.7B cap | Financial-sector strength; fresh catalyst unavailable |
+| ETSY | Etsy | +7.40% | 99.6% | 4.50M; ~$392M; $7.99B cap | Independently reported BofA upgrade/turnaround thesis and bullish e-commerce sentiment |
+| AWK | American Water Works | +3.34% | 95.7% | 2.41M; ~$337M; $27.8B cap | Utility/defensive momentum; fresh catalyst unavailable |
+| DLTR | Dollar Tree | +4.01% | 94.2% | 2.43M; ~$332M; $26.3B cap | Consumer-value rotation; fresh catalyst unavailable |
 
-Because the exact primary universe is unavailable, these names must earn a trade from Monday's chart; they receive no prior-session qualification credit.
+Other exact qualifiers with at least roughly $50M of August 24 dollar volume included ULTA, IT, FCFS, EAT, SNAP, BROS, ELF, CART, CHD, VRSN, AGCO, TGTX, IAG, IONS, MNDY, EIX, CROX, GDDY, SFM, Z, FRPT, BXP, OR, LIFE, EZPW, KSS, AEO, SRRK, CWST, MZTI, and GGAL. Lower-dollar-volume and thinner names are excluded from the preferred focus even when they passed the mathematical gate.
 
-## Opening-Session Continuation / Gap Update
+## Premarket Continuation / Gap Update
 
-The displayed relative-volume figure is TradingView's 10-day factor and is **not confirmed as time-of-day normalized RVOL**.
+This is **premarket confirmation only**; the opening session has not begun. Displayed relative volume is the prior-session 10-day factor, not current time-normalized RVOL.
 
-| Ticker | Price | Change | Opening gap | Volume | Displayed rel. vol. | Float | Opening behavior |
-|---|---:|---:|---:|---:|---:|---:|---|
-| CLF | 12.05 | +6.88% | about +5.8% | 5.50M | 0.34x | 560.4M | Held green but faded from 12.33 high into retracement zone |
-| DIS | 111.24 | +3.21% | about +0.6% | 3.11M | 0.42x | 1.72B | Strong expansion from 108.08 low; now off 111.87 high |
-| MSTR | 123.98 | +3.97% | about +2.2% | 12.70M | 0.50x | 363.6M | Recovered from 119.38 and pressed 124.72; highest chase risk |
-| MARA | 11.56 | +2.67% | about -0.8% | 11.61M | 0.22x | 377.8M | Dip bought; testing 11.60 high |
-| RIOT | 20.43 | +3.01% | about +1.0% | 4.28M | 0.15x | Above open and close to 20.50 high, but volume factor modest |
-| CLSK | 12.02 | +0.29% | about -1.1% | 4.19M | 0.19x | Lagging crypto peers; no clean continuation |
-| MRVL | 225.53 | -4.86% | about -3.3% | 5.17M | 0.21x | Weak semiconductor tape; bounce from 220.42 remains below 230.42 high |
+| Ticker | Premarket price | Gap | Premarket volume | Prior displayed rel. vol. | Float | Behavior / read |
+|---|---:|---:|---:|---:|---:|---|
+| V | 381.14 | -0.33% | 8.1K | 1.16x | 1.70B | Below 382.41 close; 380.87–383.25 premarket range; continuation unconfirmed |
+| MA | 595.68 | -0.70% | 3.1K | 1.14x | 806.7M | Sitting at premarket low and below 599.86 close; weak confirmation |
+| CVNA | 71.88 | -0.62% | 20.7K | 0.99x | 672.4M | Below prior close; 71.40–73.00 premarket range |
+| FIVE | 258.67 | -1.54% | 1.5K | 2.32x | 54.3M | Pulling back after Monday's 4.99% surge; thin premarket print, high chase/fade risk |
+| EXPE | 339.99 | +0.26% | 1.9K | 1.17x | 113.8M | Flat-to-positive; above prior close but below 341.09 high |
+| CELH | 35.13 | +0.29% | 42.9K | 1.10x | 186.7M | Best usable primary-cohort premarket volume; holding above 35.03 close |
+| ETSY | 87.44 | +0.47% | 340 | 1.55x | 90.7M | Above Monday high, but the 340-share print is not credible confirmation |
+| INTC* | 90.06 | +3.21% | 2.33M | 0.85x | 4.48B | Liquid chip rebound; 88.88–91.48 premarket range |
+| MRVL* | 236.00 | +2.92% | 340.8K | 0.78x | 871.2M | Rebounding after Monday's -3.27%; 232.55–238.87 premarket range |
 
-## Catalysts, News Validation, Earnings, and Sector Strength
+\*INTC and MRVL are secondary gap/rebound context, not members of the prior-session +3% near-high universe.
 
-- **Independent headline validation is incomplete.** The headline endpoint was intermittent. A Reuters-sourced Disney headline from August 20 concerned its employee stock-purchase/benefit changes; that is background, not a verified explanation for today's move.
-- **No fresh earnings reaction was independently confirmed** for the focus list at the snapshot. CLF/materials and MSTR/crypto strength are therefore treated as flow/sector moves unless a fresh filing or company release is verified.
-- **Sector confirmation:** financials, staples, and materials lead; technology and semiconductors lag materially. Longs in tech/crypto require more confirmation than longs aligned with materials.
+## Catalysts, Independent Validation, Earnings, and Sector Strength
+
+- **Macro/overnight:** AP independently confirmed positive index futures, lower oil, new Iran sanctions, U.S.-Canada trade tension, and the market's focus on Nvidia and Jackson Hole.
+- **Semiconductors:** Reuters-syndicated reporting independently described Tuesday's technology recovery after Monday's selloff. AMD also received a bullish upgrade, but the broader chip move is best treated as a sector rebound ahead of Nvidia, not a clean new catalyst for every name.
+- **Payments:** V and MA made record/near-record pushes Monday. Independent reports cited institutional buying/ownership disclosures, recent strong results, and payments-sector leadership. Both are slightly red premarket, so catalyst quality has not yet translated into continuation.
+- **Consumer/internet:** CELH and ETSY retain recent institutional/analyst momentum. EXPE's last verified company catalyst is its Aug. 5 beat-and-raise report. No fresh earnings release was independently verified for the primary focus list this morning.
+- **Sector indication:** SOXX +2.29% and SMH +1.86% lead premarket; QQQ +0.78% leads SPY +0.38%, IWM +0.54%, and DIA +0.43%. Crude -3.16% is a headwind for energy and a modest tailwind for consumers/transports.
 
 ## Current Momentum List
 
-1. **CLF — +6.88%:** strongest liquid materials continuation, but the opening high rejected.
-2. **DIS — +3.21%:** mega-cap relative strength against a weak tape; watch 111.87.
-3. **MSTR — +3.97%:** liquid, high-beta momentum with strong five-session context; do not chase above the opening range.
-4. **MARA / RIOT — +2.67% / +3.01%:** secondary crypto beta; RIOT is closer to its high, MARA has better raw volume.
-5. **MRVL — -4.86%:** downside momentum aligned with SMH weakness; short only on failed reclaim, not into the low.
+1. **INTC — +3.21% premarket:** most liquid chip-rebound candidate, but secondary context only after Monday's -3.12% loss.
+2. **MRVL — +2.92% premarket:** liquid reversal attempt into a damaged semiconductor tape; confirmation requires holding the premarket retracement zone.
+3. **CELH — +0.29% premarket after +5.01% Monday:** best combination of exact qualification and usable premarket volume.
+4. **V — -0.33% premarket after +3.06% Monday:** highest-quality institutional-liquidity qualifier; needs a 382.41/383.43 reclaim.
+5. **FIVE — -1.54% premarket after +4.99% Monday:** strong prior close but already fading; breakout-only, never a blind dip buy.
 
-## Technical Levels and Tiered Opportunities
+## Technical Map and Tiered Opportunities
 
-### Tier A — CLF conditional long (A- setup; not A+ yet)
+Full chart history and confirmed order blocks are unavailable. The zones below use reproducible prior-session and premarket OHLC. They are reference/demand-supply proxies, not validated institutional order blocks.
 
-- **Structure:** 11.75 opening low to 12.33 opening high. The 0.500–0.618 retracement pocket is approximately **12.04–11.97**, overlapping current price and the 12.00 psychological area.
-- **Trigger/entry idea:** Hold 11.97–12.04, then reclaim 12.10 with a higher low; best entry near 12.00 after confirmation.
-- **Invalidation:** Below 11.74, beyond the opening impulse low.
-- **Targets:** 12.33 (about 1.3R from 12.00), then 12.60 (about 2.3R). Reduce risk at the opening high because supply already appeared there.
-- **Chase/gap risk:** The roughly +5.8% opening gap can fill toward the prior close near 11.27 if 11.75 fails.
-- **Options angle:** Underlying plan first. CLF options are generally active, but chain liquidity, IV, Greeks, and spreads were not retrieved; no contract is recommended.
+### Tier A — CELH conditional continuation long (closest primary-universe candidate; not A+)
 
-### Tier A — DIS conditional long (A- setup; strongest mega-cap relative strength)
+- **Observed structure:** Monday 33.705–35.23 range; close 35.03. Premarket 35.09–35.493 and current 35.13.
+- **Fibonacci map:** Monday's bullish impulse gives a preferred 0.500–0.618 retracement pocket of approximately **34.47–34.29**. Price is above that pocket, so there is no preferred-pocket entry at the snapshot.
+- **Trigger / entry idea:** After the cash open, hold 35.00–35.10, then break and retest 35.50; entry concept near 35.55 only with volume and market confirmation.
+- **Invalidation:** Below 34.85 after entry; a sustained break of 34.29 invalidates the prior-session impulse thesis.
+- **Targets:** 36.50 (about 1.4R from 35.55 with 34.85 risk), then 37.25 (about 2.4R).
+- **Risk:** A loss of Monday's close turns the setup into gap-fill risk toward 34.47–34.29. No chase if the first cash-session bar extends well beyond 35.50 without a retest.
 
-- **Structure:** 108.08 opening low to 111.87 opening high. Preferred 0.500–0.618 pullback pocket: **109.98–109.53**.
-- **Trigger/entry idea:** A controlled pullback into 109.55–110.00 followed by a reclaim of 110.20; avoid entering at 111+ without a 111.87 breakout-and-hold.
-- **Invalidation:** Below 108.00.
-- **Targets:** 111.87 (about 1.2R from 109.75), then 114.00 (about 2.4R).
-- **Key levels:** 111.87 resistance; 109.75 pocket midpoint; 108.39 open; 108.08 low. A failure below the open turns the move into gap-fill risk.
-- **Options angle:** Liquid underlying/options are likely, but no live chain was inspected; use shares or wait for verified spreads rather than guessing a contract.
+### Tier A- — V breakout-and-retest long
 
-### Tier B — MSTR conditional pullback long
+- **Observed structure:** Monday low 372.21, close 382.41, high 383.43; premarket range 380.87–383.25.
+- **Fibonacci map:** Monday's impulse produces a preferred pullback pocket of approximately **377.82–376.50**, well below premarket price. The nearby 380.87 premarket low is support, but not preferred Fib/confirmed-order-block confluence.
+- **Trigger / entry idea:** Reclaim 382.41, break 383.43, then hold a retest; entry concept near 383.60.
+- **Invalidation:** Below 381.90 after a confirmed breakout; below 380.80 cancels the near-term continuation attempt.
+- **Targets:** 386.50 (about 1.7R) and 390.00 (about 3.8R).
+- **Risk:** Monday's move closed near the high and V is slightly red premarket. A failed 383.43 breakout can unwind quickly toward 380.87 and 377.82.
 
-- **Structure:** 119.38 opening low to 124.72 high. Preferred retracement pocket: **122.05–121.42**.
-- **Trigger/entry idea:** Only after a pullback holds 121.40–122.05 and reclaims 122.50; do not chase 124–125.
-- **Invalidation:** Below 119.25.
-- **Targets:** 124.72 (about 1.2R from 121.75), then 129.00 (about 2.9R).
-- **Risk:** Bitcoin-sensitive beta, a +31% five-session extension, and QQQ weakness make gap-fill/volatility risk unusually high.
-- **Options angle:** Options are active but can be expensive and wide in fast tape. Chain/IV/Greeks unavailable; no contract selection.
+### Tier B — FIVE breakout only
 
-### Tier B — MRVL conditional short
+- **Observed structure:** Monday low 246.25, close 262.72, high 263.875; premarket 257.42–260.65 with current 258.67.
+- **Fibonacci map:** Monday's impulse gives a preferred pocket of approximately **255.06–252.98**. Premarket price remains above it and has not confirmed a reversal.
+- **Trigger / entry idea:** No dip buy. Require a cash-session reclaim of 260.65 and then a break/retest of 263.88; entry concept near 263.95.
+- **Invalidation:** Below 259.90 after breakout entry; a loss of 257.40 shifts attention to the 255.06–252.98 pocket.
+- **Targets:** 270 (about 1.5R) and 275 (about 2.7R).
+- **Risk:** Low premarket volume, proximity to prior highs, and Monday's extension create substantial failed-breakout risk.
 
-- **Structure:** Bearish opening impulse from 230.42 to 220.42. The bearish 0.500–0.618 retracement pocket is **225.42–226.60**, near current price.
-- **Trigger/entry idea:** Rejection inside 225.40–226.60 followed by loss of 224.80; entry concept near 226.00.
-- **Invalidation:** Above 230.50, beyond the opening high.
-- **Targets:** 220.42 (about 1.2R), then 215.00 (about 2.4R).
-- **Risk:** Do not short directly into 220.42 support. A sustained reclaim above 226.60 weakens the setup; above 230.50 cancels it.
+### Tier B — INTC secondary semiconductor rebound
+
+- **Observed structure:** Monday 85.14–88.91 with a -3.12% close at 87.26; premarket impulse 88.88–91.48, current 90.06.
+- **Fibonacci map:** The premarket impulse's preferred 0.500–0.618 pocket is approximately **90.18–89.87**, overlapping current price. This is execution confluence, but it is extended-hours structure only.
+- **Trigger / entry idea:** After the cash open, hold 89.85–90.20 and reclaim 90.50; entry concept near 90.30 after a higher low.
+- **Invalidation:** Below 88.75, beyond the premarket impulse low.
+- **Targets:** 91.48 (about 0.8R) and 94.00 (about 2.4R). Because the first target is under 1R, size must be reduced or the trade skipped unless the second target has a clear path.
+- **Risk:** This is a bounce into Nvidia-event risk, not prior-session continuation. Cancel if SOXX loses 511.60 or QQQ loses 709.15 after the open.
+
+### Tier B- — MRVL secondary rebound watch
+
+- **Observed structure:** Monday -3.27% close at 229.29; premarket impulse 232.55–238.87, current 236.00.
+- **Fibonacci map:** Premarket 0.500–0.618 pocket is approximately **235.71–234.96**, overlapping the current area.
+- **Trigger / entry idea:** Hold 234.95–235.70 after the cash open and reclaim 236.50; entry concept near 235.80 only after a higher low.
+- **Invalidation:** Below 232.40.
+- **Targets:** 238.87 (about 0.9R) and 242.50 (about 2.0R).
+- **Risk:** The nearest obstacle offers less than 1R; skip unless 238.87 breaks cleanly or entry occurs near the lower half of the pocket.
+
+## Options Angle
+
+V, MA, CVNA, FIVE, EXPE, and INTC normally have tradable options, but no live chain, IV, Greeks, open interest, or spreads were retrieved. Keep the underlying trigger primary. If using options, require a narrow live spread, meaningful open interest/volume, and enough duration for the thesis; a 0.55–0.70 delta call with at least 30 days to expiry is the preferred *selection logic*, not a contract recommendation. Avoid short-dated premium into Nvidia and macro-event risk. CELH and MRVL require an especially careful live spread check. No option premium or contract-level risk/reward is claimed here.
 
 ## A+ Candidates
 
-**None confirmed at 9:27 AM CDT.** CLF and DIS are the closest, but both still need a pullback-hold and lower-timeframe reclaim. The index split and incomplete prior-session validation prevent an A+ label.
+**None confirmed at 8:04 AM CDT.** The cash session is not open, time-normalized RVOL is unavailable, and no setup has both confirmed opening structure and verified order-block/Fibonacci confluence. CELH is the closest primary-universe candidate; INTC has the cleanest premarket Fib overlap but belongs only to the secondary rebound list.
 
 ## Stocks to Avoid
 
-- **EMAT:** +15% but only about 1.1M shares and questionable institutional liquidity; excluded from the preferred universe.
-- **BIO.B and MOG.B:** very low displayed volume; not actionable despite large percentage moves.
-- **CLSK:** lagging MARA/RIOT and not holding clear relative momentum.
-- **QQQ/SMH dip buys:** avoid until they stop making opening-session lows and reclaim their opening prints.
-- **Any CLF, DIS, or MSTR breakout bought far above the opening high:** poor asymmetry; wait for the defined pullback pocket or clean breakout-retest.
+- **ETSY premarket breakout:** only 340 premarket shares; do not treat 87.44 as confirmation.
+- **MA until it reclaims 599.20–600.00:** it is sitting at the premarket low after Monday's near-high close.
+- **FIVE blind dip buying:** the stock is extended and fading; wait for 263.88 breakout confirmation or a structured reaction in 255.06–252.98.
+- **Low-float/microcap leaders:** exclude BDRX and other thin or questionable scanner names regardless of headline percentage moves.
+- **Chip chase:** do not buy INTC, MU, SNDK, AMD, MRVL, or NVDA solely because SOXX is green premarket. Require cash-session acceptance and respect Wednesday's Nvidia event.
+- **Energy longs based on Monday structure:** crude is down more than 3%, so XLE/energy need independent relative strength after the open.
 
 ## Final Trading Plan
 
-1. Keep index size reduced while QQQ is below 709.66 and SMH below 554.18; the tape is rotational, not broadly bullish.
-2. Prioritize **CLF 11.97–12.04** and **DIS 109.53–109.98** only after a hold/reclaim. No confirmation means no trade.
-3. Treat **MSTR 121.42–122.05** as a pullback-only idea; cancel below 119.25.
-4. Use **MRVL 225.42–226.60** only as a failed-reclaim short; never chase it into 220.42 support.
-5. Risk no more than a small predefined fraction per setup, take partials at the first target, move stops only after structure confirms, and stand down if the opening range whipsaws or the data feed becomes stale.
+1. Treat the 8:30–9:00 AM CDT window as price discovery, then reassess after the 9:00 AM data releases. No A+ label before cash-session volume and opening structure confirm.
+2. For broad risk-on confirmation, require SPY to hold 764.70, QQQ 709.15, and SOXX 511.60; strength above 768.15 / 714.17 / 519.75 improves the long backdrop.
+3. Prioritize **CELH above 35.50** and **V above 383.43** only on breakout-and-retest confirmation. Watch **FIVE above 263.88** but do not chase.
+4. Treat **INTC 89.87–90.18** and **MRVL 234.96–235.71** as secondary rebound pockets, not primary-universe continuation. Cancel if the chip ETFs lose premarket support.
+5. Risk only a small predefined fraction per setup, reject trades whose first obstacle offers less than 1R unless the farther target has a clean path, take partials at structural targets, and stand down if the 9:00 AM releases reverse the opening move.
 
-*This brief is informational market research, not investment advice. Prices and conditions are time-sensitive.*
+*This brief is informational market research, not investment advice. Premarket prices and conditions can change before the cash open.*

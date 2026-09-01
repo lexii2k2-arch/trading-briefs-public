@@ -1,0 +1,335 @@
+//@version=6
+// =============================================================================
+// Qullamaggie Breakout Scanner  —  Daily / Weekly / Monthly
+// =============================================================================
+// Setup logic:
+//   1. MOMENTUM LEG  — the stock has already made a large move (the low must
+//      come before the high, so it is a real advance, not a V-recovery).
+//   2. CONSOLIDATION — price then pauses in a tight, shallow range that holds
+//      near the highs and sits on rising short-term moving averages.
+//   3. BREAKOUT      — price clears the top of that range on a volume surge.
+//
+// The setup is defined in daily bars. Weekly and monthly are supported as
+// slower variants of the same structure (position-trade horizon), and as
+// higher-timeframe trend gates for the daily scan. See scanners/README.md
+// for why daily is the primary timeframe.
+//
+// Risk convention: the stop is never wider than 1x ADR (Average Daily Range).
+// =============================================================================
+
+indicator("Qullamaggie Breakout Scanner [D/W/M]", "QBO Scan", overlay = true, max_labels_count = 200)
+
+// -----------------------------------------------------------------------------
+// Groups
+// -----------------------------------------------------------------------------
+var string G_TF   = "1 · Timeframe"
+var string G_LEG  = "2 · Momentum leg"
+var string G_CON  = "3 · Consolidation"
+var string G_TRND = "4 · Trend & moving averages"
+var string G_VOL  = "5 · Volume & liquidity"
+var string G_HTF  = "6 · Higher-timeframe gates"
+var string G_RISK = "7 · Risk & position size"
+var string G_EP   = "8 · Episodic pivot (optional)"
+var string G_DISP = "9 · Display"
+
+// -----------------------------------------------------------------------------
+// 1 · Timeframe presets
+// -----------------------------------------------------------------------------
+autoTF = input.bool(true, "Auto-adapt parameters to chart timeframe", group = G_TF,
+     tooltip = "ON: the leg lookback, consolidation length and thresholds switch automatically " +
+               "between Daily / Weekly / Monthly presets. OFF: the manual values below are used on every timeframe.")
+
+isD = timeframe.isdaily
+isW = timeframe.isweekly
+isM = timeframe.ismonthly
+tfSupported = isD or isW or isM
+
+// -----------------------------------------------------------------------------
+// 2 · Momentum leg
+// -----------------------------------------------------------------------------
+legLenIn = input.int(60,   "Leg lookback (bars)",    minval = 5,   group = G_LEG,
+     tooltip = "Daily preset 60 bars (~3 months). Weekly 13 (~1 quarter). Monthly 6.")
+minLegIn = input.float(30.0, "Min leg gain %",       minval = 1.0, group = G_LEG,
+     tooltip = "Minimum advance from the leg low to the leg high.")
+requireOrder = input.bool(true, "Require low before high (real advance)", group = G_LEG,
+     tooltip = "Rejects names where the highest high came before the lowest low.")
+
+legLen = not autoTF ? legLenIn : isW ? 13   : isM ? 6    : 60
+minLeg = not autoTF ? minLegIn : isW ? 40.0 : isM ? 60.0 : 30.0
+
+// -----------------------------------------------------------------------------
+// 3 · Consolidation
+// -----------------------------------------------------------------------------
+consLenIn   = input.int(10,   "Consolidation length (bars)", minval = 3,   group = G_CON,
+     tooltip = "Daily preset 10 bars (~2 weeks). Weekly 4. Monthly 3.")
+maxDepthIn  = input.float(15.0, "Max consolidation depth %", minval = 1.0, group = G_CON,
+     tooltip = "Range of the consolidation as a % of its high. Tighter is better.")
+minHoldPct  = input.float(90.0, "Consolidation must hold >= % of leg high", minval = 50.0, maxval = 100.0, group = G_CON,
+     tooltip = "Rejects setups that gave back most of the momentum leg before basing.")
+requireContraction = input.bool(true, "Require range contraction vs the leg", group = G_CON,
+     tooltip = "ATR over the consolidation must be smaller than ATR over the leg — volatility is drying up.")
+
+consLen  = not autoTF ? consLenIn  : isW ? 4    : isM ? 3    : 10
+maxDepth = not autoTF ? maxDepthIn : isW ? 20.0 : isM ? 25.0 : 15.0
+
+// -----------------------------------------------------------------------------
+// 4 · Trend & moving averages
+// -----------------------------------------------------------------------------
+fastLen   = input.int(10, "Fast MA (EMA) length", minval = 2, group = G_TRND)
+slowLen   = input.int(20, "Slow MA (SMA) length", minval = 2, group = G_TRND)
+needAbove = input.bool(true,  "Price must be above both MAs",  group = G_TRND)
+needRise  = input.bool(true,  "Fast MA must be rising",        group = G_TRND)
+
+fastMA = ta.ema(close, fastLen)
+slowMA = ta.sma(close, slowLen)
+
+// -----------------------------------------------------------------------------
+// 5 · Volume & liquidity
+// -----------------------------------------------------------------------------
+volLen     = input.int(20,   "Volume average length",        minval = 2,   group = G_VOL)
+volMult    = input.float(1.5, "Breakout volume surge (x avg)", minval = 1.0, group = G_VOL)
+minDollar  = input.float(10.0, "Min avg $ volume (millions)",  minval = 0.0, group = G_VOL,
+     tooltip = "Liquidity floor. Set to 0 to disable.")
+adrLen     = input.int(20,   "ADR length",                    minval = 2,   group = G_VOL)
+minADR     = input.float(3.0, "Min ADR %",                    minval = 0.0, group = G_VOL,
+     tooltip = "Qullamaggie's volatility floor — the stock has to move enough to be worth trading.")
+
+avgVol    = ta.sma(volume, volLen)
+volRatio  = avgVol > 0 ? volume / avgVol : 0.0
+dollarVol = avgVol * close
+// ADR% as Qullamaggie defines it: average of (high / low) over N bars, minus 1.
+adrPct    = 100.0 * (ta.sma(high / low, adrLen) - 1.0)
+
+// -----------------------------------------------------------------------------
+// 6 · Higher-timeframe gates
+// -----------------------------------------------------------------------------
+useHTF     = input.bool(true, "Use higher-timeframe trend gates", group = G_HTF)
+htf1       = input.timeframe("W", "Gate 1 timeframe", group = G_HTF)
+htf2       = input.timeframe("M", "Gate 2 timeframe", group = G_HTF)
+htfMaLen   = input.int(10, "HTF MA length", minval = 2, group = G_HTF)
+gate2Req   = input.bool(false, "Gate 2 is required (not just scored)", group = G_HTF,
+     tooltip = "OFF: the monthly gate only contributes to the rating. ON: it must pass for a signal to fire.")
+noRepaint  = input.bool(true, "Use confirmed HTF bars only (no repaint)", group = G_HTF,
+     tooltip = "ON is recommended. Reads the last CLOSED higher-timeframe bar, so signals never repaint.")
+
+f_htfBull(int len) =>
+    // Returned as 1/0 rather than bool so an absent HTF bar resolves to 0, not na.
+    b = close > ta.ema(close, len) ? 1 : 0
+    [b, b[1]]
+
+[h1Raw, h1Prev] = request.security(syminfo.tickerid, htf1, f_htfBull(htfMaLen), lookahead = barmerge.lookahead_off)
+[h2Raw, h2Prev] = request.security(syminfo.tickerid, htf2, f_htfBull(htfMaLen), lookahead = barmerge.lookahead_off)
+
+gate1 = not useHTF ? true : nz(noRepaint ? h1Prev : h1Raw) == 1
+gate2 = not useHTF ? true : nz(noRepaint ? h2Prev : h2Raw) == 1
+
+// -----------------------------------------------------------------------------
+// 7 · Risk & position size
+// -----------------------------------------------------------------------------
+equity     = input.float(25000.0, "Account equity ($)", minval = 0.0, group = G_RISK)
+riskPct    = input.float(0.5, "Risk per trade (% of equity)", minval = 0.01, maxval = 5.0, group = G_RISK)
+stopMode   = input.string("Consolidation low", "Stop placement", options = ["Consolidation low", "Breakout bar low", "1x ADR"], group = G_RISK)
+capStopADR = input.bool(true, "Cap stop at 1x ADR", group = G_RISK,
+     tooltip = "Qullamaggie's rule: never risk more than one average daily range.")
+
+// -----------------------------------------------------------------------------
+// 8 · Episodic pivot (optional secondary setup)
+// -----------------------------------------------------------------------------
+useEP   = input.bool(false, "Also flag episodic pivots (gap-ups)", group = G_EP,
+     tooltip = "A separate Qullamaggie setup: a large gap up on unusual volume, typically on news or earnings. " +
+               "Off by default so it does not dilute the breakout scan.")
+epGap   = input.float(10.0, "Min gap %",         minval = 1.0, group = G_EP)
+epVol   = input.float(3.0,  "Min volume surge x", minval = 1.0, group = G_EP)
+
+// -----------------------------------------------------------------------------
+// 9 · Display
+// -----------------------------------------------------------------------------
+showTable  = input.bool(true, "Show dashboard",        group = G_DISP)
+showLevels = input.bool(true, "Show trigger levels",   group = G_DISP)
+showLabels = input.bool(true, "Label breakout bars",   group = G_DISP)
+minRating  = input.int(0, "Minimum rating to signal (0 = off)", minval = 0, maxval = 10, group = G_DISP)
+
+// =============================================================================
+// SETUP CONSTRUCTION
+// =============================================================================
+
+// --- Momentum leg ---
+legHigh    = ta.highest(high, legLen)
+legLow     = ta.lowest(low,  legLen)
+legGainPct = legLow > 0 ? 100.0 * (legHigh / legLow - 1.0) : 0.0
+lowBarOff  = ta.lowestbars(low,  legLen)   // 0 or negative; more negative = further back
+highBarOff = ta.highestbars(high, legLen)
+legOrderOK = not requireOrder or (lowBarOff < highBarOff)
+legOK      = legGainPct >= minLeg and legOrderOK
+
+// --- Consolidation (prior bars only, so the current bar can break out of it) ---
+consHigh   = ta.highest(high, consLen)[1]
+consLow    = ta.lowest(low,  consLen)[1]
+consDepth  = consHigh > 0 ? 100.0 * (consHigh - consLow) / consHigh : na
+depthOK    = consDepth <= maxDepth
+holdOK     = consHigh >= legHigh * (minHoldPct / 100.0)
+
+atrCons        = ta.atr(consLen)
+atrLeg         = ta.atr(legLen)
+contractionOK  = not requireContraction or (atrCons < atrLeg)
+
+consOK = depthOK and holdOK and contractionOK
+
+// --- Trend ---
+aboveOK = not needAbove or (close > fastMA and close > slowMA)
+risingOK = not needRise or (fastMA > fastMA[1])
+trendOK = aboveOK and risingOK
+
+// --- Liquidity / volatility ---
+liqOK = (minDollar <= 0 or dollarVol >= minDollar * 1000000.0) and adrPct >= minADR
+
+// --- Base: everything except the breakout trigger itself ---
+baseOK = legOK and consOK and trendOK and liqOK and gate1 and (not gate2Req or gate2)
+
+// --- Trigger ---
+volOK       = volRatio >= volMult
+brokeOut    = close > consHigh
+setupReady  = baseOK and not brokeOut and close >= consHigh * 0.97   // coiled, within 3% of the trigger
+
+// =============================================================================
+// RATING (0–10, capped)
+// =============================================================================
+rating = 0
+rating += legGainPct >= minLeg * 2.0 ? 3 : legGainPct >= minLeg ? 2 : 0
+rating += adrPct >= 6.0 ? 2 : adrPct >= minADR ? 1 : 0
+rating += consDepth <= maxDepth * 0.6 ? 2 : depthOK ? 1 : 0
+rating += trendOK ? 2 : 0
+rating += volRatio >= volMult * 2.0 ? 2 : volOK ? 1 : 0
+rating += (gate1 and gate2) ? 1 : 0
+rating := math.min(rating, 10)
+
+ratingOK   = minRating == 0 or rating >= minRating
+breakout   = baseOK and brokeOut and volOK and ratingOK
+fiveStar   = breakout and rating >= 8
+
+// --- Episodic pivot ---
+gapPct = close[1] > 0 ? 100.0 * (open / close[1] - 1.0) : 0.0
+epFire = useEP and gapPct >= epGap and volRatio >= epVol and liqOK and gate1
+
+// =============================================================================
+// TRADE LEVELS
+// =============================================================================
+adrAbs   = close * adrPct / 100.0
+rawStop  = stopMode == "Consolidation low"  ? consLow :
+           stopMode == "Breakout bar low"   ? low     :
+                                              close - adrAbs
+// Never risk more than one ADR.
+stopPrice = capStopADR ? math.max(rawStop, close - adrAbs) : rawStop
+riskPerSh = close - stopPrice
+shares    = riskPerSh > 0 ? int(math.floor((equity * riskPct / 100.0) / riskPerSh)) : 0
+target2R  = close + riskPerSh * 2.0
+target3R  = close + riskPerSh * 3.0
+
+// =============================================================================
+// PLOTS
+// =============================================================================
+plot(showLevels and (setupReady or breakout) ? consHigh : na, "Breakout trigger",
+     color = color.new(color.orange, 0), style = plot.style_linebr, linewidth = 2)
+plot(showLevels and (setupReady or breakout) ? consLow  : na, "Consolidation low",
+     color = color.new(color.gray, 30), style = plot.style_linebr, linewidth = 1)
+
+plot(fastMA, "Fast MA", color = color.new(color.aqua,  40))
+plot(slowMA, "Slow MA", color = color.new(color.olive, 40))
+
+plotshape(setupReady and not setupReady[1] ? true : na, "Setup ready", shape.circle,
+     location.belowbar, color.new(color.orange, 20), size = size.tiny)
+plotshape(breakout and not fiveStar ? true : na, "Breakout", shape.triangleup,
+     location.belowbar, color.new(color.lime, 0), size = size.small)
+plotshape(fiveStar ? true : na, "5-star breakout", shape.labelup,
+     location.belowbar, color.new(color.green, 0), size = size.normal, text = "5★", textcolor = color.white)
+plotshape(epFire ? true : na, "Episodic pivot", shape.diamond,
+     location.abovebar, color.new(color.fuchsia, 0), size = size.tiny)
+
+if showLabels and breakout
+    label.new(bar_index, low,
+         text  = str.format("BO {0}/10\nE {1}  SL {2}\n{3} sh  T2R {4}",
+                  rating, str.tostring(close, format.mintick), str.tostring(stopPrice, format.mintick),
+                  shares, str.tostring(target2R, format.mintick)),
+         style = label.style_label_up, color = color.new(color.green, 20),
+         textcolor = color.white, size = size.small)
+
+bgcolor(setupReady ? color.new(color.orange, 92) : na, title = "Setup-ready shading")
+
+// =============================================================================
+// DASHBOARD
+// =============================================================================
+var table t = table.new(position.top_right, 3, 12, border_width = 1)
+
+f_yn(bool ok) => ok ? "✔" : "✘"
+f_col(bool ok) => ok ? color.new(color.green, 70) : color.new(color.red, 75)
+
+if showTable and barstate.islast
+    string tfName = isD ? "Daily" : isW ? "Weekly" : isM ? "Monthly" : "⚠ " + timeframe.period + " (daily preset)"
+    table.cell(t, 0, 0, "Qullamaggie Breakout", text_color = color.white, bgcolor = color.new(color.navy, 0), text_size = size.small)
+    table.cell(t, 1, 0, tfName,  text_color = color.white, bgcolor = color.new(color.navy, 0), text_size = size.small)
+    table.cell(t, 2, 0, str.tostring(rating) + "/10", text_color = color.white,
+         bgcolor = rating >= 8 ? color.new(color.green, 0) : color.new(color.navy, 0), text_size = size.small)
+
+    table.cell(t, 0, 1, "Leg gain",      text_size = size.tiny)
+    table.cell(t, 1, 1, str.tostring(legGainPct, "#.#") + "%", text_size = size.tiny)
+    table.cell(t, 2, 1, f_yn(legOK),     text_size = size.tiny, bgcolor = f_col(legOK))
+
+    table.cell(t, 0, 2, "Cons. depth",   text_size = size.tiny)
+    table.cell(t, 1, 2, str.tostring(consDepth, "#.#") + "%", text_size = size.tiny)
+    table.cell(t, 2, 2, f_yn(consOK),    text_size = size.tiny, bgcolor = f_col(consOK))
+
+    table.cell(t, 0, 3, "ADR",           text_size = size.tiny)
+    table.cell(t, 1, 3, str.tostring(adrPct, "#.#") + "%", text_size = size.tiny)
+    table.cell(t, 2, 3, f_yn(adrPct >= minADR), text_size = size.tiny, bgcolor = f_col(adrPct >= minADR))
+
+    table.cell(t, 0, 4, "Above MAs",     text_size = size.tiny)
+    table.cell(t, 1, 4, str.tostring(fastLen) + "/" + str.tostring(slowLen), text_size = size.tiny)
+    table.cell(t, 2, 4, f_yn(trendOK),   text_size = size.tiny, bgcolor = f_col(trendOK))
+
+    table.cell(t, 0, 5, "Volume x avg",  text_size = size.tiny)
+    table.cell(t, 1, 5, str.tostring(volRatio, "#.##") + "x", text_size = size.tiny)
+    table.cell(t, 2, 5, f_yn(volOK),     text_size = size.tiny, bgcolor = f_col(volOK))
+
+    table.cell(t, 0, 6, "Avg $ vol",     text_size = size.tiny)
+    table.cell(t, 1, 6, str.tostring(dollarVol / 1000000.0, "#.#") + "M", text_size = size.tiny)
+    table.cell(t, 2, 6, f_yn(liqOK),     text_size = size.tiny, bgcolor = f_col(liqOK))
+
+    table.cell(t, 0, 7, "HTF " + htf1 + " / " + htf2, text_size = size.tiny)
+    table.cell(t, 1, 7, f_yn(gate1) + " / " + f_yn(gate2), text_size = size.tiny)
+    table.cell(t, 2, 7, f_yn(gate1),     text_size = size.tiny, bgcolor = f_col(gate1))
+
+    table.cell(t, 0, 8, "Trigger",       text_size = size.tiny)
+    table.cell(t, 1, 8, str.tostring(consHigh, format.mintick), text_size = size.tiny)
+    table.cell(t, 2, 8, breakout ? "BO" : setupReady ? "READY" : "—", text_size = size.tiny,
+         bgcolor = breakout ? color.new(color.green, 40) : setupReady ? color.new(color.orange, 50) : color.new(color.gray, 80))
+
+    table.cell(t, 0, 9,  "Stop / risk",  text_size = size.tiny)
+    table.cell(t, 1, 9,  str.tostring(stopPrice, format.mintick), text_size = size.tiny)
+    table.cell(t, 2, 9,  str.tostring(close > 0 ? 100.0 * riskPerSh / close : 0.0, "#.#") + "%", text_size = size.tiny)
+
+    table.cell(t, 0, 10, "Size @ " + str.tostring(riskPct, "#.##") + "%", text_size = size.tiny)
+    table.cell(t, 1, 10, str.tostring(shares) + " sh", text_size = size.tiny)
+    table.cell(t, 2, 10, "$" + str.tostring(shares * close, "#"), text_size = size.tiny)
+
+    table.cell(t, 0, 11, "Targets 2R/3R", text_size = size.tiny)
+    table.cell(t, 1, 11, str.tostring(target2R, format.mintick), text_size = size.tiny)
+    table.cell(t, 2, 11, str.tostring(target3R, format.mintick), text_size = size.tiny)
+
+// =============================================================================
+// ALERTS
+// =============================================================================
+alertcondition(setupReady and not setupReady[1], "Setup Ready",      "QBO setup ready on {{ticker}} — coiled under the trigger.")
+alertcondition(breakout,                          "Breakout",         "QBO BREAKOUT on {{ticker}} at {{close}}.")
+alertcondition(fiveStar,                          "5-Star Breakout",  "QBO 5★ BREAKOUT on {{ticker}} at {{close}}.")
+alertcondition(epFire,                            "Episodic Pivot",   "QBO episodic pivot on {{ticker}} — gap up on heavy volume.")
+
+// Webhook-ready payload (use "Any alert() function call" as the alert condition).
+if breakout and barstate.isconfirmed
+    alert(str.format(
+         '{{"strategy":"qullamaggie_breakout","ticker":"{0}","tf":"{1}","action":"buy","rating":{2},' +
+         '"entry":{3},"stop":{4},"target_2r":{5},"target_3r":{6},"shares":{7},"adr_pct":{8},"vol_x":{9}}}',
+         syminfo.ticker, timeframe.period, rating,
+         str.tostring(close, format.mintick), str.tostring(stopPrice, format.mintick),
+         str.tostring(target2R, format.mintick), str.tostring(target3R, format.mintick),
+         shares, str.tostring(adrPct, "#.##"), str.tostring(volRatio, "#.##")),
+         alert.freq_once_per_bar_close)
